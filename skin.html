@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<title>[##_page_title_##] : [##_title_##]</title>
+	<link rel="alternate" type="application/rss+xml" title="[##_title_##]" href="[##_rss_url_##]" />
+	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="./images/font-awesome.min.css">
+	<!--[if lt IE 9]>
+	<script src="//t1.daumcdn.net/tistory_admin/lib/jquery/jquery-1.12.4.min.js"></script>
+	<![endif]-->
+	<!--[if gte IE 9]><!-->
+	<script src="//t1.daumcdn.net/tistory_admin/lib/jquery/jquery-3.2.1.min.js"></script>
+	<!--<![endif]-->
+</head>
+<body id="[##_body_id_##]">
+<s_t3>
+<div id="container"> 
+
+	<div id="header">
+		<div class="global-wrap">
+			<h1 class="blog-title">
+				<a href="[##_blog_link_##]">
+					[##_title_##]
+					<!-- <img src="[##_image_##]" width="100" height="100" class="img-profile" alt="[##_title_##]"> -->
+				</a>
+			</h1>
+			<div class="header-nav">
+				<ul>
+					<li class="search">
+						<s_search>
+							<div class="area_search">
+								<form action="#" method="get" class="frm_search" onsubmit="[##_search_onclick_submit_##]">
+									<fieldset>
+										<legend class="sr-only">검색하기 폼</legend>
+										<input type="text" name="[##_search_name_##]" value="[##_search_text_##]" class="search-input" title="검색하기" placeholder="Search">
+										<button type="button" class="btn-search"><i class="fa fa-search fa-lg" id="btnSearch"></i></button>
+									</fieldset>
+								</form>
+							</div>
+						</s_search>
+					</li>
+					<li class="taglog" ><a href="[##_taglog_link_##]" title="태그"><i class="fa fa-tags fa-lg"></i></a></li>
+					<li class="localog" ><a href="[##_location_link_##]" title="위치로그"><i class="fa fa-map-marker fa-lg"></i></a></li>
+					<li class="guestbook" ><a href="[##_guestbook_link_##]" title="방명록"><i class="fa fa-book fa-lg"></i></a></li>
+					<li class="rss"><a href="[##_rss_url_##]" onclick="window.open(this.href); return false" title="rss"><i class="fa fa-rss fa-lg"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div> <!-- header close -->
+
+	<div id="contentWrap">
+		<div id="content"> 
+			<div class="searchList">11. 검색 결과 리스트</div>
+			<div class="searchRplist">12. 검색 결과 댓글 리스트</div>
+			<div class="locallog">13. 위치 로그</div>
+			<div class="taglog">14. 태그 클라우드</div>
+
+			<div class="guestbook">15. 방명록 
+				<div class="guestWrite">15-1. 방명록 글쓰기</div>
+				<div class="guestList">15-2. 방명록 리스트</div> 
+			</div><!-- guestbook close -->
+
+			<div class="entryNotice">16. 공지사항 글</div>
+
+			<div class="entryProtected">17. 보호 글</div>
+			
+			<div class="entry">18. 글 
+				<div class="titleWrap">18-1. 글 제목 | 카테고리 | 작성일 | 글 관리</div>
+				<div class="article">18-2. 글</div>
+				<div class="tagTrail">18-3. 글 관련 태그</div>
+				<div class="actionTrail">18-4. 트랙백 | 댓글</div>
+				<div class="trackback">18-5. 트랙백</div>
+				<div class="code_comment">18-6. 댓글 
+					<div class="code_commentList">18-6-1. 댓글 리스트</div>
+					<div class="code_commentWrite">18-6-2. 댓글 쓰기</div> 
+				</div>
+			</div><!-- entry close -->
+
+			<div class="entry">19. 페이지</div> 
+
+		</div> <!-- content close --> 
+
+		<div id="sidebar"> 
+			#sidebar
+		</div> <!-- sidebar close --> 
+	</div><!-- //contentWrap -->
+
+	<div id="footer"> 
+		#footer
+	</div> <!-- footer close --> 
+
+</div> <!-- container close --> 
+</s_t3>
+
+<script src="./images/script.js"></script>
+</body>
+</html>

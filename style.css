@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Noto Sans';
+    src: url(//t1.daumcdn.net/tistory_admin/static/font/notokr-regular.woff2) format('woff2'),
+    url(//t1.daumcdn.net/tistory_admin/static/font/notokr-regular.woff) format('woff');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Noto Sans';
+    src: url(//t1.daumcdn.net/tistory_admin/static/font/notokr-demilight.woff2) format('woff2'),
+    url(//t1.daumcdn.net/tistory_admin/static/font/notokr-demilight.woff) format('woff');
+    font-style: normal;
+    font-weight: 100;
+}
+@font-face {
+    font-family: 'Noto Sans';
+    src: url(//t1.daumcdn.net/tistory_admin/static/font/notokr-bold.woff2) format('woff2'),
+    url(//t1.daumcdn.net/tistory_admin/static/font/notokr-bold.woff) format('woff');
+    font-style: normal;
+    font-weight: bold;
+}
+
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button{margin:0;padding:0;outline:none}
+fieldset,img{border:0 none}
+dl,ul,ol,menu,li {list-style:none}
+blockquote, q {quotes: none}
+blockquote:before, blockquote:after,q:before, q:after {content:'';content:none}
+input,select,textarea,button {vertical-align:middle}
+input::-ms-clear {display:none}
+button {border:0 none;background-color:transparent;cursor:pointer}
+body {background:#fff}
+body,th,td,input,select,textarea,button {font-size:14px;line-height:1.5;font-family:'Noto Sans', sans-serif;color:#666} /* color값은 디자인가이드에 맞게사용 */
+a {color:#333;text-decoration:none}
+a:active, a:hover {text-decoration:underline}
+a:active {background-color:transparent}
+address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
+
+.sr-only {position: absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); border:0;}
+
+/* layout */
+#container {background:#f3f5f7; min-width:1200px}
+#header {padding:10px; border-bottom:1px solid #ddd; background:#fff;}
+#contentWrap {width:1200px; margin:0 auto;}
+#contentWrap:after {display:block; clear:both; content:'';}
+#content {width:900px; float:left;}
+#sidebar {width:280px; float:right; background:#fff;}
+#footer {padding:20px; border-top:1px solid #ddd; background:#fff;}
+
+/* header */
+.global-wrap {width:1200px; margin:0 auto;}
+.global-wrap:after {display:block; clear:both; content:'';}
+.blog-title {float:left;}
+.header-nav {float:right; margin-top:10px}
+.header-nav li {display:inline-block; margin-left:15px;}
+.header-nav li button {vertical-align:top}
+.header-nav li div {position:relative}
+.header-nav li input.search-input {position:absolute; right:30px; top:-4px; padding:4px; border:1px solid #ddd; border-radius:5px;}

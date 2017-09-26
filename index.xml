@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<skin>
+	<information>
+		<name>#1</name> <!-- 스킨 이름  -->
+		<version>1.0</version> <!-- 스킨 버전 -->
+		<description> <!-- 스킨에 대한 설명 -->
+			<![CDATA[ 다양한 글을 여러 기기에서 읽기 좋게 보여주는 스킨입니다. ]]>
+		</description>
+		<license> <!-- 스킨의 저작권 -->
+			<![CDATA[ MIT License ]]>
+		</license>
+	</information>
+	<author>
+		<name>nOo9ya</name> <!-- 제작자 이름 -->
+		<homepage>http://noo9ya.tistory.com</homepage> <!-- 제작자 홈페이지 -->
+		<email>noo9ya@noo9ya.com</email> <!-- 제작자 이메일 -->
+	</author>
+	<default>
+		<recentEntries>4</recentEntries> <!-- 사이드바의 최근글 표시 갯수 -->
+		<recentComments>4</recentComments> <!-- 사이드바의 최근 댓글 표시 갯수 -->
+		<recentTrackbacks>4</recentTrackbacks> <!-- 사이드바의 최근 트랙백 표시 갯수 -->
+		<itemsOnGuestbook>10</itemsOnGuestbook> <!-- 한페이지에 표시될 방명록 갯수 *** -->
+		<tagsInCloud>30</tagsInCloud> <!-- 사이드바에 표시될 태그 갯수 -->
+		<sortInCloud>3</sortInCloud> <!-- 태그 클라우드 표현 방식 (1:인기도순, 2:이름순, 3:랜덤) -->
+		<expandComment>1</expandComment> <!-- 댓글영역 표현 방식 (0:감추기, 1:펼치기) -->
+		<expandTrackbacks>1</expandTrackbacks> <!-- 트랙백영역 표현 방식 (0:감추기, 1:펼치기) -->
+		<lengthOfRecentNotice>25</lengthOfRecentNotice> <!-- 최근 공지 표현될 글자수 -->
+		<lengthOfRecentEntry>27</lengthOfRecentEntry> <!-- 최근 글 표현될 글자수 -->
+		<lengthOfRecentComment>30</lengthOfRecentComment> <!-- 최근 댓글에 표현될 글자수 -->
+		<lengthOfRecentTrackback>30</lengthOfRecentTrackback> <!-- 최근 트랙백에 표현될 글자수 -->
+		<lengthOfLink>30</lengthOfLink> <!-- 링크에 표현될 글자수 -->
+		<showListOnCategory>1</showListOnCategory> <!-- 카테고리 클릭시 리스트 표현(0:숨김, 1:보임) -->
+		<showListOnArchive>1</showListOnArchive> <!-- 글보관함 클릭시 리스트 표현(0:숨김, 1:보임) -->
+		<commentMessage> <!-- 댓글 표현 방법 -->
+			<none>0</none> <!-- 댓글이 하나도 없을때 -->
+			<single>1</single> <!-- 댓글이 하나 있을때 -->
+		</commentMessage>
+		<trackbackMessage> <!-- 트랙백 표현 방법 -->
+			<none>0</none> <!-- 트랙백이 하나도 없을때 -->
+			<single>1</single> <!-- 댓글이 하나 있을때 -->
+		</trackbackMessage>
+		<tree> <!-- 카테고리 설정 -->
+			<color>000000</color> <!-- 카테고리 글자색 -->
+			<bgColor>ffffff</bgColor> <!-- 카테고리 배경색 -->
+			<activeColor>000000</activeColor> <!-- 선택시 글자색 -->
+			<activeBgColor>eeeeee</activeBgColor> <!-- 선택시 배경색 -->
+			<labelLength>27</labelLength> <!-- 표현될 카테고리 글자 수 -->
+			<showValue>1</showValue> <!-- 카테고리 글 수 표현(0:숨김, 1:보임) -->
+		</tree>
+		<contentWidth>820</contentWidth> <!-- 콘텐츠영역 가로 사이즈, 이 사이즈에 맞춰 에디터의 위지윅이 제대로 구현된다. -->
+	</default>
+</skin>
