@@ -43,10 +43,10 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 /* layout */
 #container {background:#f3f5f7; min-width:1200px}
 #header {padding:10px; border-bottom:1px solid #ddd; background:#fff;}
-#contentWrap {width:1200px; margin:0 auto;}
+#contentWrap {width:1200px; margin:10px auto;}
 #contentWrap:after {display:block; clear:both; content:'';}
 #content {width:900px; float:left;}
-#sidebar {width:280px; float:right; background:#fff;}
+#sidebar {width:280px; float:right;}
 #footer {padding:20px; border-top:1px solid #ddd; background:#fff;}
 
 /* header */
@@ -58,3 +58,17 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 .header-nav li button {vertical-align:top}
 .header-nav li div {position:relative}
 .header-nav li input.search-input {position:absolute; right:30px; top:-4px; padding:4px; border:1px solid #ddd; border-radius:5px;}
+
+/* sidebar */
+#sidebar div {margin-bottom:10px; padding:10px; background:#fff; border:1px solid #ddd}
+.category {}
+.category .tt_category {}
+.category .tt_category .link_tt {}
+.category .tt_category .c_cnt {color:#ff8149; font-size:0.85em;}
+.category .tt_category img {display:none;}
+.category .tt_category ul.category_list {margin:10px 0 0 4px}
+.category .tt_category ul.category_list li {list-style:circle inside}
+.category .tt_category ul.category_list li a {}
+.category .tt_category ul.category_list li ul.sub_category_list {margin:0 0 10px 26px;}
+.category .tt_category ul.category_list li ul.sub_category_list li {list-style:none}
+.category .tt_category ul.category_list li ul.sub_category_list li a {font-size:0.95em; color:#777;}
