@@ -50,61 +50,317 @@
 		</div>
 	</div> <!-- header close -->
 
-	<div id="contentWrap">
-		<div id="content"> 
-			<div class="searchList">11. 검색 결과 리스트</div>
-			<div class="searchRplist">12. 검색 결과 댓글 리스트</div>
-			<div class="locallog">13. 위치 로그</div>
-			<div class="taglog">14. 태그 클라우드</div>
+    <div id="contentWrap">
+        <div id="content">
+            <s_list>
+                <div class="list_title">
+                    <h2 id="dkBody" class="tit_skin"><span class="screen_out">목록</span><span class="txt_title">[##_list_conform_##] ([##_list_count_##])</span>
+                    </h2>
+                </div>
 
-			<div class="guestbook">15. 방명록 
-				<div class="guestWrite">15-1. 방명록 글쓰기</div>
-				<div class="guestList">15-2. 방명록 리스트</div> 
-			</div><!-- guestbook close -->
+                <div class="searchList">
+                    <h3>'[##_list_conform_##]'에 해당되는 글 [##_list_count_##]건</h3>
+                    <ol>
+                        <s_list_rep>
+                            <li>
+                                <span class="date">[##_list_rep_regdate_##]</span>
+                                <a href="[##_list_rep_link_##]">[##_list_rep_title_##]</a>
+                                <span class="cnt">[##_list_rep_rp_cnt_##]</span>
+                            </li>
+                        </s_list_rep>
+                    </ol>
+                </div>
+            </s_list>
 
-			<div class="entryNotice">16. 공지사항 글</div>
+            <div class="index_title">
+                <h2 class="tit_skin"><span class="txt_title">[##_title_##]</span></h2>
+            </div>
 
-			<div class="entryProtected">17. 보호 글</div>
-			
-			<div class="entry">18. 글 
-				<div class="titleWrap">18-1. 글 제목 | 카테고리 | 작성일 | 글 관리</div>
-				<div class="article">18-2. 글</div>
-				<div class="tagTrail">18-3. 글 관련 태그</div>
-				<div class="actionTrail">18-4. 트랙백 | 댓글</div>
-				<div class="trackback">18-5. 트랙백</div>
-				<div class="code_comment">18-6. 댓글 
-					<div class="code_commentList">18-6-1. 댓글 리스트</div>
-					<div class="code_commentWrite">18-6-2. 댓글 쓰기</div> 
-				</div>
-			</div><!-- entry close -->
+            <s_article_rep>
+                <s_index_article_rep>
+                    <div class="list_content">
+                        <s_article_rep_thumbnail>
+                            <a href="[##_article_rep_link_##]" class="thumbnail_post"><img
+                                    src="//i1.daumcdn.net/thumb/C150x150/?fname=[##_article_rep_thumbnail_raw_url_##]"></a>
+                        </s_article_rep_thumbnail>
+                        <a href="[##_article_rep_link_##]" class="link_post">
+                            <strong class="tit_post ">[##_article_rep_title_##]</strong>
 
-			<div class="entry">19. 페이지</div> 
+                            <p class="txt_post">[##_article_rep_summary_##]</p>
+                        </a>
 
-		</div> <!-- content close --> 
+                        <div class="detail_info">
+                            <a href="[##_article_rep_category_link_##]"
+                               class="link_cate">[##_article_rep_category_##]</a>
+                            <span class="txt_bar"></span>
+                            <span class="txt_date">[##_article_rep_date_##]</span>
+                        </div>
+                    </div>
+                </s_index_article_rep>
 
-		<div id="sidebar">
-			<s_sidebar>
-				<s_sidebar_element>
-					<!-- 카테고리 -->
-					<div class="category">
-						<h3>CATEGORY</h3>
-						[##_category_list_##]
-					</div>
-				</s_sidebar_element>
-			</s_sidebar>
 
-			<s_sidebar>
-				<s_sidebar_element>
-					<!-- 티스토리 스킨 작업 중 안내 -->
-					<div class="category">
-						<h3>스킨 작업중입니다!!</h3>
-						<p>화면이 깨져보여도 이해해주세요~</p>
-					</div>
-				</s_sidebar_element>
-			</s_sidebar>
-		</div> <!-- sidebar close --> 
+                <s_permalink_article_rep>
+                    <h2 id="dkBody" class="screen_out">[##_article_rep_title_##] 본문</h2>
 
-	</div><!-- //contentWrap -->
+                    <div class="area_title">
+                        <strong class="tit_category"><a href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a></strong>
+
+                        <h3 class="tit_post">[##_article_rep_title_##]</h3>
+								<span class="info_post">[##_article_rep_author_##]
+                                <span class="txt_bar"></span>[##_article_rep_date_##]
+								<s_ad_div>
+                                    <span class="txt_bar"></span><a href="[##_s_ad_m_link_##]"
+                                                                    class="link_detail">수정</a>
+                                    <span class="txt_bar"></span><a href="#" onclick="[##_s_ad_s2_onclick_##]"
+                                                                    class="link_detail">[##_s_ad_s1_label_##]</a>
+                                    <span class="txt_bar"></span><a href="#" onclick="[##_s_ad_d_onclick_##]"
+                                                                    class="link_detail">삭제</a>
+                                </s_ad_div>
+							</span>
+                    </div>
+
+                    <div class="area_view">
+                        [##_article_rep_desc_##]
+                    </div>
+                    <div class="area_etc">
+                        <s_tag_label>
+                            <dl class="list_tag">
+                                <dt>Tag</dt>
+                                <dd>[##_tag_label_rep_##]</dd>
+                            </dl>
+                        </s_tag_label>
+
+                        <strong class="screen_out">공유하기 링크</strong>
+                        <ul class="list_share">
+                            <li><a href="#none" class="ico_skin link_fb" data-service="facebook">페이스북</a></li>
+                            <li><a href="#none" class="ico_skin link_ks" data-service="kakaostory">카카오스토리</a></li>
+                            <li><a href="#none" class="ico_skin link_tw" data-service="twitter">트위터</a></li>
+                        </ul>
+                    </div>
+
+                    <s_article_related>
+                        <div class="area_related">
+                            <strong class="tit_related">'[##_article_rep_category_##]' Related Articles</strong>
+                            <ul class="list_related">
+                                <s_article_related_rep>
+                                    <li class="[##_article_related_rep_type_##]">
+                                        <a href="[##_article_related_rep_link_##]" class="link_related">
+                                            <s_article_related_rep_thumbnail>
+													<span class="thumb_related">
+														<img src="//i1.daumcdn.net/thumb/C185x200/?fname=[##_article_related_rep_thumbnail_link_##]"
+                                                             class="img_related" alt="">
+													</span>
+                                            </s_article_related_rep_thumbnail>
+                                            <span class="txt_related">[##_article_related_rep_title_##]</span>
+                                            <span class="date_related">[##_article_related_rep_date_##]</span>
+                                            <span class="frame_related"></span>
+                                        </a>
+                                    </li>
+                                </s_article_related_rep>
+                            </ul>
+                            <a href="[##_article_rep_category_link_##]" class="link_more">more</a>
+                        </div>
+                    </s_article_related>
+
+                    <div class="area_reply">
+                        <strong class="tit_reply">
+                            <s_rp_count>[##_article_rep_rp_cnt_##]</s_rp_count>
+                            Comments</strong>
+                        <s_rp>
+                            <s_rp_container>
+                                <ul class="list_reply">
+                                    <s_rp_rep>
+                                        <li id='[##_rp_rep_id_##]' class="[##_rp_rep_class_##]">
+                                            <span class="ico_skin thumb_profile">
+												<img src="//i1.daumcdn.net/thumb/C96x96/?fname=[##_rp_rep_logo_##]"
+                                                     width="48" height="48" class="img_profile" alt="프로필사진">
+											</span>
+													<span class="reply_content">
+                                                <span class="tit_nickname">[##_rp_rep_name_##]</span>
+                                                <span class="txt_date">[##_rp_rep_date_##]</span>
+                                                <span class="txt_reply">[##_rp_rep_desc_##]</span>
+                                            </span>
+
+                                            <div class="area_more">
+                                                <!-- on_more 클래스 추가시 레이어 오픈 -->
+                                                <a href="#none" class="more_reply">
+                                                    <span class="ico_skin ico_more">댓글 메뉴 보기</span>
+                                                </a>
+
+                                                <div class="reply_layer">
+                                                    <div class="inner_reply_layer">
+                                                        <div class="layer_head">
+                                                            <strong class="screen_out">댓글메뉴</strong>
+                                                        </div>
+                                                        <div class="layer_body">
+                                                            <a href="[##_rp_rep_link_##]" class="link_reply">댓글주소</a>
+                                                            <a href="#none" onclick="[##_rp_rep_onclick_delete_##]"
+                                                               class="link_reply">수정/삭제</a>
+                                                            <a href="#none" onclick="[##_rp_rep_onclick_reply_##]"
+                                                               class="link_reply">댓글쓰기</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <s_rp2_container>
+                                            <s_rp2_rep>
+                                                <li id='[##_rp_rep_id_##]' class="re_reply [##_rp_rep_class_##]">
+                                                    <span class="ico_skin thumb_profile">
+														<img src="//i1.daumcdn.net/thumb/C96x96/?fname=[##_rp_rep_logo_##]"
+                                                             width="48" height="48" class="img_profile" alt="프로필사진">
+													</span>
+															<span class="reply_content">
+                                                        <span class="tit_nickname">[##_rp_rep_name_##]</span>
+                                                        <span class="txt_date">[##_rp_rep_date_##]</span>
+                                                        <span class="txt_reply">[##_rp_rep_desc_##]</span>
+                                                    </span>
+
+                                                    <div class="area_more">
+                                                        <!-- on_more 클래스 추가시 레이어 오픈 -->
+                                                        <a href="#none" class="more_reply">
+                                                            <span class="ico_skin ico_more">댓글 메뉴 보기</span>
+                                                        </a>
+
+                                                        <div class="reply_layer">
+                                                            <div class="inner_reply_layer">
+                                                                <div class="layer_head">
+                                                                    <strong class="screen_out">댓글메뉴</strong>
+                                                                </div>
+                                                                <div class="layer_body">
+                                                                    <a href="[##_rp_rep_link_##]" class="link_reply">댓글주소</a>
+                                                                    <a href="#none"
+                                                                       onclick="[##_rp_rep_onclick_delete_##]"
+                                                                       class="link_reply">수정/삭제</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </s_rp2_rep>
+                                        </s_rp2_container>
+                                    </s_rp_rep>
+
+                                </ul>
+                            </s_rp_container>
+
+                            <s_rp_input_form>
+                                <fieldset class="fld_reply">
+                                    <legend class="screen_out">댓글쓰기 폼</legend>
+                                    <s_rp_member>
+                                        <s_rp_guest>
+                                            <div class="writer_info">
+                                                    <span class="info_name">
+                                                        <label for="[##_rp_input_name_##]" class="lab_info screen_out">이름</label>
+                                                        <span class="wrap_info">
+                                                            <input type="text" name="[##_rp_input_name_##]"
+                                                                   id="[##_rp_input_name_##]" class="inp_info"
+                                                                   placeholder="Name" tabindex="1">
+                                                        </span>
+                                                    </span>
+														<span class="info_pw ">
+                                                        <label for="[##_rp_input_password_##]"
+                                                               class="lab_info screen_out">비밀번호</label>
+                                                        <span class="wrap_info">
+                                                            <input type="password" name="[##_rp_input_password_##]"
+                                                                   id="[##_rp_input_password_##]" class="inp_info"
+                                                                   placeholder="Password" tabindex="2">
+                                                        </span>
+                                                    </span>
+                                            </div>
+                                        </s_rp_guest>
+                                        <div class="writer_check">
+                                                <span class="check_secret ">
+                                                    <input type="checkbox" name="[##_rp_input_is_secret_##]"
+                                                           id="[##_rp_input_is_secret_##]" class="inp_secret"
+                                                           tabindex="4">
+                                                    <label for="[##_rp_input_is_secret_##]" class="lab_secret">
+                                                        <span class="ico_skin ico_check"></span>
+                                                        Secret
+                                                    </label>
+                                                </span>
+                                        </div>
+                                    </s_rp_member>
+
+                                    <div class="reply_write ">
+                                        <label for="[##_rp_input_comment_##]" class="lab_write screen_out">내용</label>
+                                        <textarea name="[##_rp_input_comment_##]" id="[##_rp_input_comment_##]"
+                                                  class="tf_reply" placeholder="여러분의 소중한 댓글을 입력해주세요"
+                                                  tabindex="3"></textarea>
+                                    </div>
+
+                                    <div class="writer_btn">
+                                        <button type="submit" class="btn_enter" onclick="[##_rp_onclick_submit_##]"
+                                                tabindex="5">Send
+                                        </button>
+                                    </div>
+                                </fieldset>
+                            </s_rp_input_form>
+                        </s_rp>
+                    </div>
+
+
+                </s_permalink_article_rep>
+            </s_article_rep>
+
+            <div class="locallog">13. 위치 로그</div>
+            <div class="taglog">14. 태그 클라우드</div>
+
+            <div class="guestbook">15. 방명록
+                <div class="guestWrite">15-1. 방명록 글쓰기</div>
+                <div class="guestList">15-2. 방명록 리스트</div>
+            </div>
+            <!-- guestbook close -->
+
+            <div class="entryNotice">16. 공지사항 글</div>
+
+            <div class="entryProtected">17. 보호 글</div>
+
+            <div class="entry">18. 글
+                <div class="titleWrap">18-1. 글 제목 | 카테고리 | 작성일 | 글 관리</div>
+                <div class="article">18-2. 글</div>
+                <div class="tagTrail">18-3. 글 관련 태그</div>
+                <div class="actionTrail">18-4. 트랙백 | 댓글</div>
+                <div class="trackback">18-5. 트랙백</div>
+                <div class="code_comment">18-6. 댓글
+                    <div class="code_commentList">18-6-1. 댓글 리스트</div>
+                    <div class="code_commentWrite">18-6-2. 댓글 쓰기</div>
+                </div>
+            </div>
+            <!-- entry close -->
+
+            <div class="entry">19. 페이지</div>
+
+        </div>
+        <!-- content close -->
+
+        <div id="sidebar">
+            <s_sidebar>
+                <s_sidebar_element>
+                    <!-- 카테고리 -->
+                    <div class="category">
+                        <h3>CATEGORY</h3>
+                        [##_category_list_##]
+                    </div>
+                </s_sidebar_element>
+            </s_sidebar>
+
+            <s_sidebar>
+                <s_sidebar_element>
+                    <!-- 티스토리 스킨 작업 중 안내 -->
+                    <div class="category">
+                        <h3>스킨 작업중입니다!!</h3>
+
+                        <p>화면이 깨져보여도 이해해주세요~</p>
+                    </div>
+                </s_sidebar_element>
+            </s_sidebar>
+        </div>
+        <!-- sidebar close -->
+
+    </div>
+    <!-- //contentWrap -->
 
 	<div id="footer"> 
 		#footer
