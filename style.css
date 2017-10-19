@@ -1,6 +1,30 @@
 @charset "UTF-8";
 
 @font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 400;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 700;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 300;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+}
+
+@font-face {
     font-family: 'Noto Sans';
     src: url(//t1.daumcdn.net/tistory_admin/static/font/notokr-regular.woff2) format('woff2'),
     url(//t1.daumcdn.net/tistory_admin/static/font/notokr-regular.woff) format('woff');
@@ -25,18 +49,21 @@
 /* reset */
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button{margin:0;padding:0;outline:none}
 fieldset,img{border:0 none}
-dl,ul,ol,menu,li {list-style:none}
+dl,ul,ol,menu,li {/* list-style:none */}
 blockquote, q {quotes: none}
-blockquote:before, blockquote:after,q:before, q:after {content:'';content:none}
+blockquote:before, blockquote:after,q:before, q:after {content:''}
 input,select,textarea,button {vertical-align:middle}
 input::-ms-clear {display:none}
 button {border:0 none;background-color:transparent;cursor:pointer}
 body {background:#fff}
-body,th,td,input,select,textarea,button {font-size:14px;line-height:1.5;font-family:'Noto Sans', sans-serif;color:#666} /* color값은 디자인가이드에 맞게사용 */
-a {color:#333;text-decoration:none}
+body,th,td,input,select,textarea,button {font-size:16px;line-height:1.5;font-family:'Noto Sans', sans-serif;color:#222}
+a {color:#222;text-decoration:none}
 a:active, a:hover {text-decoration:underline}
 a:active {background-color:transparent}
 address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
+
+::selection { background: #ff8149; color:#fff;}
+::-moz-selection { background: #ff8149; color:#fff;}
 
 .sr-only {position: absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); border:0;}
 
@@ -45,7 +72,7 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 #header {padding:10px; border-bottom:1px solid #ddd; background:#fff;}
 #contentWrap {width:1200px; margin:10px auto;}
 #contentWrap:after {display:block; clear:both; content:'';}
-#content {width:900px; float:left;}
+#content {width:910px; float:left;}
 #sidebar {width:280px; float:right;}
 #footer {padding:20px; border-top:1px solid #ddd; background:#fff;}
 
@@ -62,13 +89,93 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 /* sidebar */
 #sidebar div {margin-bottom:10px; padding:10px; background:#fff; border:1px solid #ddd}
 .category {}
-.category .tt_category {}
+.category .tt_category {list-style:none}
 .category .tt_category .link_tt {}
-.category .tt_category .c_cnt {color:#ff8149; font-size:0.85em;}
+.category .tt_category .c_cnt {color:#ff8149; font-size:0.725em;}
 .category .tt_category img {display:none;}
 .category .tt_category ul.category_list {margin:10px 0 0 4px}
 .category .tt_category ul.category_list li {list-style:circle inside}
 .category .tt_category ul.category_list li a {}
 .category .tt_category ul.category_list li ul.sub_category_list {margin:0 0 10px 26px;}
 .category .tt_category ul.category_list li ul.sub_category_list li {list-style:none}
-.category .tt_category ul.category_list li ul.sub_category_list li a {font-size:0.95em; color:#777;}
+.category .tt_category ul.category_list li ul.sub_category_list li a {font-size:0.85em; color:#777;}
+
+
+/* *********************************************************************
+   Search List
+   ****************************************************************** */
+.search-list {}
+.search-list h3 {padding:20px 0; color:#111; font-size:1.85em; font-weight:normal}
+
+/* *********************************************************************
+   Blog Post
+   ****************************************************************** */
+/* Blog list */
+.article-list {margin-bottom:-1px; padding:24px 20px 26px; background:#fff; border:1px solid #ddd}
+.article-list::after { content:''; clear:both; display:block }
+.article-list .article-item {text-decoration:none}
+.article-list .article-item:hover .title {color:#ff8149}
+.article-list .article-item .thumb {float:left; width:150px; height:150px; margin:6px 30px 5px 0}
+.article-list .article-item .title {font-weight:normal;font-size:1.375em}
+.article-list .article-item .summary {margin-top:4px; color:#7e7e7e; vertical-align:top; font:normal 0.875em 'NanumBarunGothic','Noto Sans', sans-serif; line-height:1.5em;}
+.article-list .info {margin-top:6px; font-size:0.875em}
+.article-list .info a {color:#ff8149}
+.article-list .info .pipe {display:inline-block; margin:0 10px; color:#dfdfdf}
+.article-list .info .date {color:#999}
+
+/* Article Header */
+.article-header {margin-bottom:10px; background:#fff; border:1px solid #ddd}
+.article-header:after {display:block; clear:both; content:''}
+.article-header .title-wrap {padding:20px 20px 10px 20px}
+.article-header .title-wrap .category-info a {color:#ff8149}
+.article-header .title-wrap .article-title {margin-top:5px; font-size:2em; color:#111; line-height:1em}
+.article-header .info-wrap {margin-top:10px; padding:10px 20px; background:#1d1d1d}
+.article-header .info-wrap:after {display:block; clear:both; content:''}
+.article-header .info-wrap .article-info {float:left}
+.article-header .info-wrap .article-info li {margin-right:15px}
+.article-header .info-wrap .article-control {float:right}
+.article-header .info-wrap .article-control li {margin-left:15px}
+.article-header .info-wrap ul {list-style:none}
+.article-header .info-wrap ul:after {display:block; clear:both; content:''}
+.article-header .info-wrap ul li {float:left; font-size:0.875em; color:#bbb}
+.article-header .info-wrap ul li i {margin-right:4px; color:#eee}
+.article-header .info-wrap ul li a {color:#bbb}
+
+/* Article */
+.article {padding:20px; background:#fff; border:1px solid #ddd; font-weight:normal; font-size:1em; line-height:1.75em}
+.article h1 {font-size:2em; line-height:2.5em}
+.article h2 {font-size:1.5em; line-height:2em}
+.article h3 {margin:30px 0 10px; padding:15px 0 0 10px; border-left:5px solid #1d1d1d; color:#000; font-weight:normal; font-size:1.5em;}
+.article h4 {color:#1d1d1d; font-size:1.125em}
+.article ul {padding-left:20px; list-style:disc}
+.article ul li ul {padding:0 0 20px 20px; list-style:none; font-size:0.875em}
+.article ul li ol {padding:0 0 20px 20px; list-style:decimal; font-size:0.875em}
+.article blockquote {padding:20px; font-size:0.875em; line-height:1.5em; color:#333; background:#efefef; border:1px solid #ddd}
+.article a {color:#ff8149}
+
+/* Article Footer */
+.article-footer {font-size:0.875em}
+.article-footer:after {display:block; clear:both; content:''}
+.article-footer dl.article-tag {float:left}
+.article-footer dl.article-tag dt {float:left}
+.article-footer dl.article-tag dd {float:left; margin-left:5px}
+.article-footer ul.article-share {float:right}
+.article-footer ul.article-share li {display:inline-block; margin-left:10px}
+.article-footer ul.article-share li a {color:#333}
+.article-footer ul.article-share li a.facebook i {color:#4b69b9}
+.article-footer ul.article-share li a.twitter i {color:#53aced}
+.article-footer ul.article-share li a.kakaostory i {color:#eed810}
+
+/* Article Related */
+.article-related {position:relative; margin:10px 0; padding:20px; background:#fff; border:1px solid #ddd;}
+.article-related h1 {font-weight:normal; font-size:1.5em}
+.article-related h1 a {color:#ff8149}
+.article-related ul.related-list {margin-top:20px; list-style:none}
+.article-related ul.related-list li {border-top:1px solid #eee}
+.article-related ul.related-list li a {display:block; padding:15px 0; color:#999}
+.article-related ul.related-list li a:after {display:block; clear:both; content:''}
+.article-related ul.related-list li a:hover, .article-related ul.related-list li a:active, .article-related ul.related-list li a:focus {color:#111; background:#f7f7f7; text-decoration:none}
+.article-related ul.related-list li .related-list-thumb {display:block; float:left; margin:0 30px 0 10px; width:150px; height:80px; overflow:hidden}
+.article-related ul.related-list li .related-list-date {display:block; margin-top:5px; font-size:1em; color:#bbb;}
+.article-related ul.related-list li .related-list-title {font-weight:normal; font-size:1.25em}
+.article-related .related-more {position:absolute; top:27px; right:20px}
