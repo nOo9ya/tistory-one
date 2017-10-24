@@ -156,122 +156,83 @@
                         <!-- article related -->
                     </s_article_related>
 
-                    <div class="area_reply">
-                        <strong class="tit_reply"><s_rp_count>[##_article_rep_rp_cnt_##]</s_rp_count>  Comments</strong>
+                    <!-- article reply -->
+                    <div class="article-reply">
+                        <h1><s_rp_count><strong>[##_article_rep_rp_cnt_##]</strong></s_rp_count> Comments</h1>
                         <s_rp>
-                            <s_rp_container>
-                                <ul class="list_reply">
-                                    <s_rp_rep>
-                                        <li id='[##_rp_rep_id_##]' class="[##_rp_rep_class_##]">
-                                            <span class="ico_skin thumb_profile">
-												<img src="//i1.daumcdn.net/thumb/C96x96/?fname=[##_rp_rep_logo_##]" width="48" height="48" class="img_profile" alt="프로필사진">
-											</span>
-													<span class="reply_content">
-                                                <span class="tit_nickname">[##_rp_rep_name_##]</span>
-                                                <span class="txt_date">[##_rp_rep_date_##]</span>
-                                                <span class="txt_reply">[##_rp_rep_desc_##]</span>
-                                            </span>
-                                            <div class="area_more">
-                                                <!-- on_more 클래스 추가시 레이어 오픈 -->
-                                                <a href="#none" class="more_reply">
-                                                    <span class="ico_skin ico_more">댓글 메뉴 보기</span>
-                                                </a>
-                                                <div class="reply_layer">
-                                                    <div class="inner_reply_layer">
-                                                        <div class="layer_head">
-                                                            <strong class="screen_out">댓글메뉴</strong>
-                                                        </div>
-                                                        <div class="layer_body">
-                                                            <a href="[##_rp_rep_link_##]" class="link_reply">댓글주소</a>
-                                                            <a href="#none" onclick="[##_rp_rep_onclick_delete_##]" class="link_reply">수정/삭제</a>
-                                                            <a href="#none" onclick="[##_rp_rep_onclick_reply_##]" class="link_reply">댓글쓰기</a>
-                                                        </div>
-                                                    </div>
+                            <div class="reply-wrap">
+                                <s_rp_container>
+                                    <ul class="reply-list">
+                                        <s_rp_rep>
+                                            <li id='[##_rp_rep_id_##]' class="[##_rp_rep_class_##]">
+                                                <div class="thumb">
+												    <img src="//i1.daumcdn.net/thumb/C96x96/?fname=[##_rp_rep_logo_##]" width="48" height="48" class="img_profile" alt="프로필사진">
                                                 </div>
-                                            </div>
-                                        </li>
-
-                                        <s_rp2_container>
-                                            <s_rp2_rep>
-                                                <li id='[##_rp_rep_id_##]' class="re_reply [##_rp_rep_class_##]">
-                                                    <span class="ico_skin thumb_profile">
-														<img src="//i1.daumcdn.net/thumb/C96x96/?fname=[##_rp_rep_logo_##]" width="48" height="48" class="img_profile" alt="프로필사진">
-													</span>
-															<span class="reply_content">
-                                                        <span class="tit_nickname">[##_rp_rep_name_##]</span>
-                                                        <span class="txt_date">[##_rp_rep_date_##]</span>
-                                                        <span class="txt_reply">[##_rp_rep_desc_##]</span>
-                                                    </span>
-                                                    <div class="area_more">
-                                                        <!-- on_more 클래스 추가시 레이어 오픈 -->
-                                                        <a href="#none" class="more_reply">
-                                                            <span class="ico_skin ico_more">댓글 메뉴 보기</span>
-                                                        </a>
-                                                        <div class="reply_layer">
-                                                            <div class="inner_reply_layer">
-                                                                <div class="layer_head">
-                                                                    <strong class="screen_out">댓글메뉴</strong>
-                                                                </div>
-                                                                <div class="layer_body">
-                                                                    <a href="[##_rp_rep_link_##]" class="link_reply">댓글주소</a>
-                                                                    <a href="#none" onclick="[##_rp_rep_onclick_delete_##]" class="link_reply">수정/삭제</a>
-                                                                </div>
-                                                            </div>
+                                                <div class="reply-content">
+                                                    <ul class="info">
+                                                        <li class="nickname">[##_rp_rep_name_##]</li>
+                                                        <li class="date">[##_rp_rep_date_##]</li>
+                                                    </ul>
+                                                    <p class="text">[##_rp_rep_desc_##]</p>
+                                                    <ul class="control">
+                                                        <li class=""><a href="[##_rp_rep_link_##]" class="reply-url"><i class="fa fa-comment"></i> 댓글주소</a></li>
+                                                        <li class=""><a href="#none" onclick="[##_rp_rep_onclick_delete_##]" class="reply-modify"><i class="fa fa-cog"></i> 수정/삭제</a></li>
+                                                        <li class=""><a href="#none" onclick="[##_rp_rep_onclick_reply_##]" class="reply-reply"><i class="fa fa-mail-reply"></i> 댓글쓰기</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <s_rp2_container>
+                                                <s_rp2_rep>
+                                                    <li id='[##_rp_rep_id_##]' class="[##_rp_rep_class_##] re-reply">
+                                                        <div class="thumb">
+                                                            <img src="//i1.daumcdn.net/thumb/C96x96/?fname=[##_rp_rep_logo_##]" width="48" height="48" class="img_profile" alt="프로필사진">
                                                         </div>
-                                                    </div>
-                                                </li>
-                                            </s_rp2_rep>
-                                        </s_rp2_container>
-                                    </s_rp_rep>
+                                                        <div class="reply-content">
+                                                            <ul class="info">
+                                                                <li class="nickname">[##_rp_rep_name_##]</li>
+                                                                <li class="date">[##_rp_rep_date_##]</li>
+                                                            </ul>
+                                                            <p class="text">[##_rp_rep_desc_##]</p>
+                                                            <ul class="control">
+                                                                <li class=""><a href="[##_rp_rep_link_##]" class="reply-url"><i class="fa fa-comment"></i> 댓글주소</a></li>
+                                                                <li class=""><a href="#none" onclick="[##_rp_rep_onclick_delete_##]" class="reply-modify"><i class="fa fa-cog"></i> 수정/삭제</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                </s_rp2_rep>
+                                            </s_rp2_container>
+                                        </s_rp_rep>
+                                    </ul>
+                                </s_rp_container>
 
-                                </ul>
-                            </s_rp_container>
-
-                            <s_rp_input_form>
-                                <fieldset class="fld_reply">
-                                    <legend class="screen_out">댓글쓰기 폼</legend>
-                                    <s_rp_member>
-                                        <s_rp_guest>
-                                            <div class="writer_info">
-                                                    <span class="info_name">
-                                                        <label for="[##_rp_input_name_##]" class="lab_info screen_out">이름</label>
-                                                        <span class="wrap_info">
-                                                            <input type="text" name="[##_rp_input_name_##]" id="[##_rp_input_name_##]" class="inp_info" placeholder="Name" tabindex="1">
-                                                        </span>
-                                                    </span>
-														<span class="info_pw ">
-                                                        <label for="[##_rp_input_password_##]" class="lab_info screen_out">비밀번호</label>
-                                                        <span class="wrap_info">
-                                                            <input type="password" name="[##_rp_input_password_##]" id="[##_rp_input_password_##]" class="inp_info" placeholder="Password" tabindex="2">
-                                                        </span>
-                                                    </span>
-                                            </div>
-                                        </s_rp_guest>
-                                        <div class="writer_check">
-                                                <span class="check_secret ">
-                                                    <input type="checkbox" name="[##_rp_input_is_secret_##]" id="[##_rp_input_is_secret_##]" class="inp_secret" tabindex="4">
-                                                    <label for="[##_rp_input_is_secret_##]" class="lab_secret">
-                                                        <span class="ico_skin ico_check"></span>
-                                                        Secret
-                                                    </label>
-                                                </span>
-                                        </div>
-                                    </s_rp_member>
-
-                                    <div class="reply_write ">
-                                        <label for="[##_rp_input_comment_##]" class="lab_write screen_out">내용</label>
-                                        <textarea name="[##_rp_input_comment_##]" id="[##_rp_input_comment_##]" class="tf_reply" placeholder="여러분의 소중한 댓글을 입력해주세요" tabindex="3"></textarea>
+                                <s_rp_input_form>
+                                    <div class="reply-form">
+                                        <fieldset>
+                                            <legend class="sr-only">댓글쓰기 폼</legend>
+                                            <s_rp_member>
+                                                <s_rp_guest>
+                                                    <dl class="reply-guest">
+                                                        <dt><label for="[##_rp_input_name_##]">이름</label></dt>
+                                                        <dd><input type="text" name="[##_rp_input_name_##]" id="[##_rp_input_name_##]" placeholder="이름" title="이름 입력"> </dd>
+                                                        <dt><label for="[##_rp_input_password_##]" class="lab_info screen_out">비밀번호</label></dt>
+                                                        <dd><input type="password" name="[##_rp_input_password_##]" id="[##_rp_input_password_##]" placeholder="비밀번호" title="비밀번호 입력"> </dd>
+                                                    </dl>
+                                                </s_rp_guest>
+                                            </s_rp_member>
+                                            <p class="secret">
+                                                <label for="[##_rp_input_is_secret_##]"><input type="checkbox" name="[##_rp_input_is_secret_##]" id="[##_rp_input_is_secret_##]"> 비밀댓글</label>
+                                            </p>
+                                            <dl class="reply-write">
+                                                <dt><label for="[##_rp_input_comment_##]" class="lab_write screen_out">내용</label></dt>
+                                                <dd><textarea name="[##_rp_input_comment_##]" id="[##_rp_input_comment_##]" placeholder="여러분의 소중한 댓글을 입력해주세요" title="댓글 내용 이력"></textarea></dd>
+                                            </dl>
+                                            <button type="submit" class="reply-btn" onclick="[##_rp_onclick_submit_##]"><i class="fa fa-send"></i> Comment Send</button>
+                                        </fieldset>
                                     </div>
-
-                                    <div class="writer_btn">
-                                        <button type="submit" class="btn_enter" onclick="[##_rp_onclick_submit_##]" tabindex="5">Send</button>
-                                    </div>
-                                </fieldset>
-                            </s_rp_input_form>
+                                </s_rp_input_form>
+                            </div>
                         </s_rp>
-                    </div>
-
-
+                    </div><!-- //article reply -->
                     <!-- //article Wrap -->
                 </s_permalink_article_rep>
             </s_article_rep>
@@ -288,19 +249,6 @@
             <div class="entryNotice">16. 공지사항 글</div>
 
             <div class="entryProtected">17. 보호 글</div>
-
-            <div class="entry">18. 글
-                <div class="titleWrap">18-1. 글 제목 | 카테고리 | 작성일 | 글 관리</div>
-                <div class="article">18-2. 글</div>
-                <div class="tagTrail">18-3. 글 관련 태그</div>
-                <div class="actionTrail">18-4. 트랙백 | 댓글</div>
-                <div class="trackback">18-5. 트랙백</div>
-                <div class="code_comment">18-6. 댓글
-                    <div class="code_commentList">18-6-1. 댓글 리스트</div>
-                    <div class="code_commentWrite">18-6-2. 댓글 쓰기</div>
-                </div>
-            </div>
-            <!-- entry close -->
 
             <div class="entry">19. 페이지</div>
 
