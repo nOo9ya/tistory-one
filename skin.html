@@ -237,6 +237,48 @@
                 </s_permalink_article_rep>
             </s_article_rep>
 
+            <s_notice_rep>
+                <!-- 공지사항 -->
+                <s_index_article_rep>
+                    <!-- notice list -->
+                    <div class="notice-list">
+                        <a href="[##_notice_rep_link_##]" class="notice-item">
+                            <h1 class="title">[##_notice_rep_title_##]</h1>
+                            <p class="summary">[##_notice_rep_summary_##]</p>
+                        </a>
+                        <p class="info">
+                            <a href="/notice">공지사항</a>
+                            <span class="pipe">|</span>
+                            <span class="date">[##_notice_rep_date_##]</span>
+                        </p>
+                    </div>
+                    <!-- //notice list -->
+                </s_index_article_rep>
+
+                <s_permalink_article_rep>
+                    <!-- notice view -->
+                    <h1 id="noticeBody" class="sr-only">[##_notice_rep_title_##] 본문</h1>
+                    <!-- notice header -->
+                    <div class="notice-header">
+                        <div class="title-wrap">
+                            <p class="category-info"><a href="/notice">공지사항</a></p>
+                            <h2 class="notice-title">[##_notice_rep_title_##]</h2>
+                        </div>
+                        <div class="info-wrap">
+                            <ul class="notice-info">
+                                <li class="author"><i class="fa fa-user-circle"></i> [##_notice_rep_author_##]</li>
+                                <li class="date"><i class="fa fa-clock-o"></i> [##_notice_rep_date_##]</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="article">
+                        [##_notice_rep_desc_##]
+                    </div>
+                    <!-- //notice view -->
+                </s_permalink_article_rep>
+            </s_notice_rep>
+
             <div class="locallog">13. 위치 로그</div>
             <div class="taglog">14. 태그 클라우드</div>
 
@@ -245,8 +287,6 @@
                 <div class="guestList">15-2. 방명록 리스트</div>
             </div>
             <!-- guestbook close -->
-
-            <div class="entryNotice">16. 공지사항 글</div>
 
             <div class="entryProtected">17. 보호 글</div>
 
@@ -263,6 +303,21 @@
                         <h3>CATEGORY</h3>
                         [##_category_list_##]
                     </div>
+                </s_sidebar_element>
+
+                <s_sidebar_element>
+                    <!-- 공지사항 -->
+                    <s_rct_notice>
+                        <div class="notice">
+                            <h1>NOTICE</h1>
+                            <ul>
+                                <s_rct_notice_rep>
+                                    <li><a href="[##_notice_rep_link_##]">[##_notice_rep_title_##]</a></li>
+                                </s_rct_notice_rep>
+                            </ul>
+                            <span class="more"><a href="/notice"><i class="fa fa-plus"></i> MORE</a></span>
+                        </div>
+                    </s_rct_notice>
                 </s_sidebar_element>
             </s_sidebar>
 
