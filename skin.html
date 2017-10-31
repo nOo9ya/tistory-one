@@ -415,14 +415,12 @@
 
             <s_paging>
                 <!-- paging -->
-                <div class="area_paging">
-                    <span class="inner_paging">
-                        <a [##_prev_page_##] class="btn_prev [##_no_more_prev_##]"><span class="ico_skin ico_prev"></span>Prev</a>
-                        <s_paging_rep>
-                            <a [##_paging_rep_link_##] class="link_page">[##_paging_rep_link_num_##]</a>
-                        </s_paging_rep>
-                        <a [##_next_page_##] class="btn_next [##_no_more_next_##]">Next<span class="ico_skin ico_next"></span></a>
-                    </span>
+                <div class="pagination">
+                    <a [##_prev_page_##] class="[##_no_more_prev_##] btn-prev"><i class="fa fa-chevron-circle-left"></i> Prev</a>
+                    <s_paging_rep>
+                        <a [##_paging_rep_link_##]>[##_paging_rep_link_num_##]</a>
+                    </s_paging_rep>
+                    <a [##_next_page_##] class="[##_no_more_next_##] btn-next">Next <i class="fa fa-chevron-circle-right"></i></a>
                 </div>
             </s_paging>
         </div>

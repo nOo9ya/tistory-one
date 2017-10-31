@@ -341,7 +341,6 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 /* RE Guestbook list */
 .guestbook-list li.re-guestbook {width:90%; margin-left:10%; border-top:1px solid #f5f5f5}
 
-
 /* *********************************************************************
    Tags
    ****************************************************************** */
@@ -355,3 +354,14 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 .tags-list li .cloud5 {color:#bbb; border:1px solid #e5e5e5}
 .tags-list li a {display:block; padding:7px 14px; border-radius:15px; font-size:0.875em}
 .tags-list li a:hover, .tags-list li a:focus, .tags-list li a:active {color:#fff; background-color:#ff8149; border:1px solid #ff8149; text-decoration:none}
+
+/* *********************************************************************
+   Pagination
+   ****************************************************************** */
+.pagination {margin:10px 0 0; text-align:center}
+.pagination .btn-prev, .pagination .btn-next, .pagination a span {display: inline-block; margin-right:2px; padding: 4px 12px; border:1px solid #ddd; border-radius: 4px; color: #111; background:#fff; text-decoration: none; text-align: center;}
+.pagination .btn-prev:hover, .pagination .btn-next:hover, .pagination a span:hover,
+.pagination .btn-prev:active, .pagination .btn-next:active, .pagination a span:active,
+.pagination .btn-prev:focus, .pagination .btn-next:focus, .pagination a span:focus {color:#fff; background:#ff8149; border:1px solid #ff8149}
+.pagination a .selected {color:#ff8149; border:1px solid #ff8149}
+.pagination .no-more-prev, .pagination .no-more-next {display:none}
