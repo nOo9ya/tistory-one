@@ -235,7 +235,6 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 /* RE Reply list */
 .reply-list li.re-reply {width:90%; margin-left:10%; border-top:1px solid #f5f5f5}
 
-
 /* *********************************************************************
    Notice
    ****************************************************************** */
@@ -264,3 +263,80 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 .notice-header .info-wrap .notice-info li {margin-right:15px; float:left; font-size:0.875em; color:#bbb}
 .notice-header .info-wrap .notice-info li i {margin-right:4px; color:#eee}
 .notice-header .info-wrap .notice-info li a {color:#bbb}
+
+/* *********************************************************************
+   Protected Article
+   ****************************************************************** */
+/* Protected Article list */
+.protected-list {margin:10px 0; padding:24px 20px 26px; background:#f9f9f9; border:1px solid #ddd}
+.protected-list .protected-item a {display:block; text-decoration:none}
+.protected-list .protected-item .title {font-weight:normal; font-size:1.375em; text-align:center;}
+.protected-list .protected-item .summary {margin-top:4px; color:#7e7e7e; text-align:center; vertical-align:top; font:normal 0.875em 'NanumBarunGothic','Noto Sans', sans-serif; line-height:1.5em;}
+.protected-list .info {margin-top:6px; font-size:0.875em; text-align:center}
+.protected-list .info a {color:#ff8149}
+.protected-list .info .pipe {display:inline-block; margin:0 10px; color:#dfdfdf}
+.protected-list .info .date {color:#999}
+/* Protected Article Form */
+.protected-header {margin-bottom:10px; background:#fff; border:1px solid #ddd}
+.protected-header:after {display:block; clear:both; content:''}
+.protected-header .title-wrap {padding:20px 20px 10px 20px}
+.protected-header .title-wrap .category-info a {color:#ff8149}
+.protected-header .title-wrap .article-title {margin-top:5px; font-size:2em; color:#111; line-height:1em}
+.protected-header .info-wrap {margin-top:10px; padding:10px 20px; background:#1d1d1d}
+.protected-header .info-wrap:after {display:block; clear:both; content:''}
+.protected-header .info-wrap .protected-info {float:left; list-style:none}
+.protected-header .info-wrap .protected-info:after {display:block; clear:both; content:''}
+.protected-header .info-wrap .protected-info li {margin-right:15px; float:left; font-size:0.875em; color:#bbb}
+.protected-header .info-wrap .protected-info li i {margin-right:4px; color:#eee}
+.protected-header .info-wrap .protected-info li a {color:#bbb}
+.protected-form {display:block; padding:90px 20px; background:#fff; border:1px solid #ddd; font-weight:normal; font-size:1em; line-height:1.75em; text-align:center}
+.protected-form strong {display:block; font-size:2em; color:#111}
+.protected-form p {margin-bottom:10px; color:#999}
+.protected-form input {padding:0 10px; height:40px; line-height:40px; color:#777; border:1px solid #ddd}
+.protected-form button {padding:0 20px; height:40px; line-height:40px; color:#fff; background:#ff8149; border:1px solid #ff8149}
+
+/* *********************************************************************
+   GuestBook
+   ****************************************************************** */
+.guestbook-title {padding:10px 20px; font-weight:normal; font-size:1.5em; background:#2d2d2d; color:#fff}
+.guestbook-wrap {padding:20px; border:1px solid #ddd; background:#fff}
+/* Guestbook Form */
+.guestbook-form {}
+.guestbook-form dl.guestbook-guest {}
+.guestbook-form dl.guestbook-guest dt {position: absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); border:0;}
+.guestbook-form dl.guestbook-guest dd {margin-bottom:10px}
+.guestbook-form dl.guestbook-guest dd input {width:100%; padding:10px 0; border:1px solid #ddd; background:#f9f9f9; color:#999; text-indent:10px;}
+.guestbook-form dl.guestbook-guest dd input:focus, .guestbook-form dl.guestbook-guest dd input:active {background:#fff; color:#111}
+.guestbook-form .secret {}
+.guestbook-form .secret label {cursor:pointer}
+.guestbook-form .secret input {width:24px; height:24px; margin-right:10px; vertical-align:bottom;}
+.guestbook-form dl.guestbook-write {margin-top:10px;}
+.guestbook-form dl.guestbook-write dt {position: absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); border:0;}
+.guestbook-form dl.guestbook-write dd {}
+.guestbook-form dl.guestbook-write dd textarea {width:100%; margin-bottom:10px; padding:10px 0; height:200px; border:1px solid #ddd; background:#f9f9f9; color:#999; text-indent:10px;}
+.guestbook-form dl.guestbook-write dd textarea:focus, .guestbook-form dl.guestbook-write dd textarea:active {background:#fff; color:#111}
+.guestbook-form button {display:block; width:100%; margin:10px 0 0 0; padding:10px 0; border:1px solid #ff7035; background:#ff8149; color:#fff; text-align:center;}
+/* Guestbook list */
+.guestbook-list {margin-bottom:30px; list-style:none; border-bottom:1px solid #e9e9e9}
+.guestbook-list li {padding:20px 0; border-top:1px solid #e9e9e9}
+.guestbook-list li:after {display:block; clear:both; content:''}
+.guestbook-list li .thumb {float:left; width:10%; text-align:center}
+.guestbook-list li .thumb img {border-radius: 50%;}
+.guestbook-list li .guestbook-content {float:right; width:90%}
+.guestbook-list li .guestbook-content:after {display:block; clear:both; content:''}
+.guestbook-list li .guestbook-content ul {}
+.guestbook-list li .guestbook-content ul li {border:0; padding:0}
+.guestbook-list li .guestbook-content .info {float:left;}
+.guestbook-list li .guestbook-content .info li {display:inline-block}
+.guestbook-list li .guestbook-content .info li.date {font-size:0.75em; color:#bbb}
+.guestbook-list li .guestbook-content .control {float:right}
+.guestbook-list li .guestbook-content .control li {display:inline-block; margin-right:10px}
+.guestbook-list li .guestbook-content .control li a {color:#ff8149; font:normal 0.75em 'NanumBarunGothic', 'Noto Sans', sans-serif;}
+.guestbook-list li .guestbook-content .control li a .fa {color:#ff8149;}
+.guestbook-list li .guestbook-content .control li a.reply-modify, .guestbook-list li .guestbook-content .control li a.reply-modify .fa {color:#ed145b}
+.guestbook-list li .guestbook-content .text {clear:both; padding:10px 0 0; color:#777; font:normal 0.875em 'NanumBarunGothic', 'Noto Sans', sans-serif; line-height:1.5em}
+/* @ 비밀글 */ .guestbook-list li.guest_secret .guestbook-content .text {color:#999}
+/* @ 일반 */   .guestbook-list li.guest_general {}
+/* @ 관리자 */ .guestbook-list li.guest_admin .guestbook-content .nickname a {color:#ff8149}
+/* RE Guestbook list */
+.guestbook-list li.re-guestbook {width:90%; margin-left:10%; border-top:1px solid #f5f5f5}

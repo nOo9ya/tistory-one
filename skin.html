@@ -82,7 +82,7 @@
 
                 <s_permalink_article_rep>
                     <!-- article wrap -->
-                    <h1 id="articleBody" class="sr-only">[##_article_rep_title_##] 본문</h1>
+                    <h1 id="dkBody" class="sr-only">[##_article_rep_title_##] 본문</h1>
 
                     <!-- article information -->
                     <div class="article-header">
@@ -175,9 +175,9 @@
                                                     </ul>
                                                     <p class="text">[##_rp_rep_desc_##]</p>
                                                     <ul class="control">
-                                                        <li class=""><a href="[##_rp_rep_link_##]" class="reply-url"><i class="fa fa-comment"></i> 댓글주소</a></li>
-                                                        <li class=""><a href="#none" onclick="[##_rp_rep_onclick_delete_##]" class="reply-modify"><i class="fa fa-cog"></i> 수정/삭제</a></li>
-                                                        <li class=""><a href="#none" onclick="[##_rp_rep_onclick_reply_##]" class="reply-reply"><i class="fa fa-mail-reply"></i> 댓글쓰기</a></li>
+                                                        <li><a href="[##_rp_rep_link_##]" class="reply-url"><i class="fa fa-comment"></i> 댓글주소</a></li>
+                                                        <li><a href="#none" onclick="[##_rp_rep_onclick_delete_##]" class="reply-modify"><i class="fa fa-cog"></i> 수정/삭제</a></li>
+                                                        <li><a href="#none" onclick="[##_rp_rep_onclick_reply_##]" class="reply-reply"><i class="fa fa-mail-reply"></i> 댓글쓰기</a></li>
                                                     </ul>
                                                 </div>
                                             </li>
@@ -194,8 +194,8 @@
                                                             </ul>
                                                             <p class="text">[##_rp_rep_desc_##]</p>
                                                             <ul class="control">
-                                                                <li class=""><a href="[##_rp_rep_link_##]" class="reply-url"><i class="fa fa-comment"></i> 댓글주소</a></li>
-                                                                <li class=""><a href="#none" onclick="[##_rp_rep_onclick_delete_##]" class="reply-modify"><i class="fa fa-cog"></i> 수정/삭제</a></li>
+                                                                <li><a href="[##_rp_rep_link_##]" class="reply-url"><i class="fa fa-comment"></i> 댓글주소</a></li>
+                                                                <li><a href="#none" onclick="[##_rp_rep_onclick_delete_##]" class="reply-modify"><i class="fa fa-cog"></i> 수정/삭제</a></li>
                                                             </ul>
                                                         </div>
                                                     </li>
@@ -214,16 +214,16 @@
                                                     <dl class="reply-guest">
                                                         <dt><label for="[##_rp_input_name_##]">이름</label></dt>
                                                         <dd><input type="text" name="[##_rp_input_name_##]" id="[##_rp_input_name_##]" placeholder="이름" title="이름 입력"> </dd>
-                                                        <dt><label for="[##_rp_input_password_##]" class="lab_info screen_out">비밀번호</label></dt>
+                                                        <dt><label for="[##_rp_input_password_##]">비밀번호</label></dt>
                                                         <dd><input type="password" name="[##_rp_input_password_##]" id="[##_rp_input_password_##]" placeholder="비밀번호" title="비밀번호 입력"> </dd>
                                                     </dl>
                                                 </s_rp_guest>
+                                                <p class="secret">
+                                                    <label for="[##_rp_input_is_secret_##]"><input type="checkbox" name="[##_rp_input_is_secret_##]" id="[##_rp_input_is_secret_##]"> 비밀댓글</label>
+                                                </p>
                                             </s_rp_member>
-                                            <p class="secret">
-                                                <label for="[##_rp_input_is_secret_##]"><input type="checkbox" name="[##_rp_input_is_secret_##]" id="[##_rp_input_is_secret_##]"> 비밀댓글</label>
-                                            </p>
                                             <dl class="reply-write">
-                                                <dt><label for="[##_rp_input_comment_##]" class="lab_write screen_out">내용</label></dt>
+                                                <dt><label for="[##_rp_input_comment_##]">내용</label></dt>
                                                 <dd><textarea name="[##_rp_input_comment_##]" id="[##_rp_input_comment_##]" placeholder="여러분의 소중한 댓글을 입력해주세요" title="댓글 내용 이력"></textarea></dd>
                                             </dl>
                                             <button type="submit" class="reply-btn" onclick="[##_rp_onclick_submit_##]"><i class="fa fa-send"></i> Comment Send</button>
@@ -257,7 +257,7 @@
 
                 <s_permalink_article_rep>
                     <!-- notice view -->
-                    <h1 id="noticeBody" class="sr-only">[##_notice_rep_title_##] 본문</h1>
+                    <h1 id="dkBody" class="sr-only">[##_notice_rep_title_##] 본문</h1>
                     <!-- notice header -->
                     <div class="notice-header">
                         <div class="title-wrap">
@@ -279,18 +279,145 @@
                 </s_permalink_article_rep>
             </s_notice_rep>
 
-            <div class="locallog">13. 위치 로그</div>
+            <s_article_protected>
+                <!-- 보호 글 -->
+                <s_index_article_rep>
+                    <!-- 보호 글 목록 -->
+                    <div class="protected-list">
+                        <a href="[##_article_rep_link_##]" class="protected-item">
+                            <h1 class="title">[##_article_rep_title_##]</h1>
+                            <p class="summary"><i class="fa fa-lock"></i> 보호되어 있는 글입니다.</p>
+                        </a>
+                        <div class="info">
+                            <a href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a>
+                            <span class="pipe">|</span>
+                            <span class="date">[##_article_rep_date_##]</span>
+                        </div>
+                    </div>
+                </s_index_article_rep>
+
+                <s_permalink_article_rep>
+                    <!-- 보호 글 비밀번호 확인 -->
+                    <h1 id="dkBody" class="sr-only">[##_article_rep_title_##] 본문</h1>
+                    <div class="protected-header">
+                        <div class="title-wrap">
+                            <p class="category-info"><a href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a></p>
+                            <h2>[##_article_rep_title_##]</h2>
+                        </div>
+                        <div class="info-wrap">
+                            <ul class="protected-info">
+                                <li class="author"><i class="fa fa-user-cirlce"></i> [##_article_rep_author_##]</li>
+                                <li class="date"><i class="fa fa-clock-o"></i> [##_article_rep_date_##]</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <form class="protected-form" onsubmit="[##_article_dissolve_##]">
+                        <strong><i class="fa fa-lock"></i> 보호되어 있는 글입니다.</strong>
+                        <p>내용을 보시려면 비밀번호를 입력하세요.</p>
+                        <input type="password" id="[##_article_password_##]" name="[##_article_password_##]" value="" title="비밀번호 입력" placeholder="비밀번호" /><button type="submit">확인</button>
+                    </form>
+                </s_permalink_article_rep>
+            </s_article_protected>
+
+            <s_guest>
+                <!-- guestbook -->
+                <h2 id="guestbookBody" class="guestbook-title">Guestbook</h2>
+                <div class="guestbook-wrap">
+                    <s_guest_input_form>
+                        <div class="guestbook-form">
+                            <fieldset>
+                                <legend class="sr-only">방명록쓰기 폼</legend>
+                                <s_guest_member>
+                                    <s_guest_form>
+                                        <dl class="guestbook-guest">
+                                            <dt><label for="[##_guest_input_name_##]">이름</label></dt>
+                                            <dd><input type="text" name="[##_guest_input_name_##]" id="[##_guest_input_name_##]" placeholder="이름" title="이름 입력"> </dd>
+                                            <dt><label for="[##_guest_input_password_##]">비밀번호</label></dt>
+                                            <dd><input type="password" name="[##_guest_input_password_##]" id="[##_guest_input_password_##]" placeholder="비밀번호" title="비밀번호 입력"> </dd>
+                                        </dl>
+                                    </s_guest_form>
+                                    <p class="secret">
+                                        <label for="[##_guest_input_is_secret_##]"><input type="checkbox" name="[##_guest_input_is_secret_##]" id="[##_guest_input_is_secret_##]"> 비밀글</label>
+                                    </p>
+                                </s_guest_member>
+                                <dl class="guestbook-write">
+                                    <dt><label for="[##_guest_input_comment_##]">내용</label></dt>
+                                    <dd><textarea name="[##_guest_input_comment_##]" id="[##_guest_input_comment_##]" placeholder="여러분의 소중한 댓글을 입력해주세요" title="방명록 내용 이력"></textarea></dd>
+                                </dl>
+                                <button type="submit" class="reply-btn" onclick="[##_guest_onclick_submit_##]"><i class="fa fa-send"></i> Guestbook Send</button>
+                            </fieldset>
+                        </div>
+                    </s_guest_input_form>
+
+                    <s_guest_container>
+                        <ul class="guestbook-list">
+                            <s_guest_rep>
+                                <li id="[##_guest_rep_id_##]" class="[##_guest_rep_class_##]">
+                                    <div class="thumb">
+                                        <img src="//i1.daumcdn.net/thumb/C96x96/?fname=https://t1.daumcdn.net/tistory_admin/blog/admin/profile_default_07.png"
+                                             width="48" height="48" class="img-profile" alt="프로필사진">
+                                    </div>
+                                    <div class="guestbook-content">
+                                        <ul class="info">
+                                            <li class="nickname"><span></span>[##_guest_rep_name_##]</li>
+                                            <li class="date">[##_guest_rep_date_##]</li>
+                                        </ul>
+                                        <p class="text">[##_guest_rep_desc_##]</p>
+                                        <ul class="control">
+                                            <li>
+                                                <a href="#none" onclick="[##_guest_rep_onclick_delete_##]" class="reply-modify">
+                                                    <i class="fa fa-cog"></i> 수정/삭제
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#none" onclick="[##_guest_rep_onclick_reply_##]" class="reply-reply">
+                                                    <i class="fa fa-mail-reply"></i> 댓글쓰기
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <s_guest_reply_container>
+                                    <s_guest_reply_rep>
+                                        <li id="[##_guest_rep_id_##]" class="[##_guest_rep_class_##] re-guestbook">
+                                            <div class="thumb">
+                                                <img src="//i1.daumcdn.net/thumb/C96x96/?fname=https://t1.daumcdn.net/tistory_admin/blog/admin/profile_default_07.png" width="48" height="48" class="img-profile" alt="프로필사진">
+                                            </div>
+                                            <div class="guestbook-content">
+                                                <ul class="info">
+                                                    <li class="nickname">[##_guest_rep_name_##]</li>
+                                                    <li class="date">[##_guest_rep_date_##]</li>
+                                                </ul>
+                                                <p class="text">[##_guest_rep_desc_##]</p>
+                                                <ul class="control">
+                                                    <li><a href="#none" onclick="[##_guest_rep_onclick_delete_##]" class="reply-modify"><i class="fa fa-cog"></i> 수정/삭제</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </s_guest_reply_rep>
+                                </s_guest_reply_container>
+                            </s_guest_rep>
+                        </ul>
+                    </s_guest_container>
+                </div>
+                <!-- guestbook close -->
+            </s_guest>
+
             <div class="taglog">14. 태그 클라우드</div>
 
-            <div class="guestbook">15. 방명록
-                <div class="guestWrite">15-1. 방명록 글쓰기</div>
-                <div class="guestList">15-2. 방명록 리스트</div>
-            </div>
-            <!-- guestbook close -->
-
-            <div class="entryProtected">17. 보호 글</div>
-
-            <div class="entry">19. 페이지</div>
+            <s_paging>
+                <!-- paging -->
+                <div class="area_paging">
+    					<span class="inner_paging">
+                            <a [##_prev_page_##] class="btn_prev [##_no_more_prev_##]"><span class="ico_skin ico_prev"></span>Prev</a>
+    						<s_paging_rep>
+                                <a [##_paging_rep_link_##] class="link_page">[##_paging_rep_link_num_##]</a>
+                            </s_paging_rep>
+                            <a [##_next_page_##] class="btn_next [##_no_more_next_##]">Next<span class="ico_skin ico_next"></span></a>
+    					</span>
+                </div>
+            </s_paging>
 
         </div>
         <!-- content close -->
