@@ -404,21 +404,27 @@
                 <!-- guestbook close -->
             </s_guest>
 
-            <div class="taglog">14. 태그 클라우드</div>
+            <s_tag>
+                <h2 id="tagsBody" class="tags-title">Tags</h2>
+                <ul class="tags-list">
+                    <s_tag_rep>
+                        <li><a href="[##_tag_link_##]" class="[##_tag_class_##]">[##_tag_name_##]</a></li>
+                    </s_tag_rep>
+                </ul>
+            </s_tag>
 
             <s_paging>
                 <!-- paging -->
                 <div class="area_paging">
-    					<span class="inner_paging">
-                            <a [##_prev_page_##] class="btn_prev [##_no_more_prev_##]"><span class="ico_skin ico_prev"></span>Prev</a>
-    						<s_paging_rep>
-                                <a [##_paging_rep_link_##] class="link_page">[##_paging_rep_link_num_##]</a>
-                            </s_paging_rep>
-                            <a [##_next_page_##] class="btn_next [##_no_more_next_##]">Next<span class="ico_skin ico_next"></span></a>
-    					</span>
+                    <span class="inner_paging">
+                        <a [##_prev_page_##] class="btn_prev [##_no_more_prev_##]"><span class="ico_skin ico_prev"></span>Prev</a>
+                        <s_paging_rep>
+                            <a [##_paging_rep_link_##] class="link_page">[##_paging_rep_link_num_##]</a>
+                        </s_paging_rep>
+                        <a [##_next_page_##] class="btn_next [##_no_more_next_##]">Next<span class="ico_skin ico_next"></span></a>
+                    </span>
                 </div>
             </s_paging>
-
         </div>
         <!-- content close -->
 

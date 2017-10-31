@@ -340,3 +340,18 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 /* @ 관리자 */ .guestbook-list li.guest_admin .guestbook-content .nickname a {color:#ff8149}
 /* RE Guestbook list */
 .guestbook-list li.re-guestbook {width:90%; margin-left:10%; border-top:1px solid #f5f5f5}
+
+
+/* *********************************************************************
+   Tags
+   ****************************************************************** */
+.tags-title {padding:10px 20px; font-weight:normal; font-size:1.5em; background:#2d2d2d; color:#fff}
+.tags-list {overflow:hidden; margin-top:30px; list-style:none}
+.tags-list li {float:left; margin:0 0 10px 10px}
+.tags-list li .cloud1 {color:#ff8149; border:1px solid #ff8149}
+.tags-list li .cloud2 {color:#000; border:1px solid #000}
+.tags-list li .cloud3 {color:#333; border:1px solid #333}
+.tags-list li .cloud4 {color:#999; border:1px solid #999}
+.tags-list li .cloud5 {color:#bbb; border:1px solid #e5e5e5}
+.tags-list li a {display:block; padding:7px 14px; border-radius:15px; font-size:0.875em}
+.tags-list li a:hover, .tags-list li a:focus, .tags-list li a:active {color:#fff; background-color:#ff8149; border:1px solid #ff8149; text-decoration:none}
