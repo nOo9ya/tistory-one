@@ -86,6 +86,13 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 .header-nav li div {position:relative}
 .header-nav li input.search-input {position:absolute; right:30px; top:-4px; padding:4px; border:1px solid #ddd; border-radius:5px;}
 
+/* footer */
+.footer-nav {margin-bottom:5px; font:0.75em normal dotum, sans-serif; text-align:center}
+.footer-nav a {display:inline-block; margin:0 3px}
+.copyright {color:#999; text-align:center; font:0.688em normal verdana, tahoma, sans-serif; letter-spacing:1px}
+.copyright a {color:#ff8149}
+.copyright a:hover, .copyright a:active, .copyright a:focus {text-decoration:underline}
+
 /* sidebar */
 #sidebar div {position:relative; margin-bottom:10px; padding:10px; background:#fff; border:1px solid #ddd}
 #sidebar div h1 {font-size:1.125em}
