@@ -1,7 +1,7 @@
 # tistory-one
 반응형 티스토리 스킨 만들기
 - 스킨명 : tistory-one
-- 문의 : http://noo9ya.tistory.com
+- 문의 : http://tistory.noo9ya.com
 
 # preview images size
 - preview.gif / 128 * 96 (티스토리 관리자 개편으로 인한 확인중)
