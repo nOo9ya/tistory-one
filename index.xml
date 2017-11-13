@@ -16,8 +16,8 @@
 		<email>noo9ya@noo9ya.com</email> <!-- 제작자 이메일 -->
 	</author>
 	<default>
-		<recentEntries>4</recentEntries> <!-- 사이드바의 최근글 표시 갯수 -->
-		<recentComments>4</recentComments> <!-- 사이드바의 최근 댓글 표시 갯수 -->
+		<recentEntries>5</recentEntries> <!-- 사이드바의 최근글 표시 갯수 -->
+		<recentComments>5</recentComments> <!-- 사이드바의 최근 댓글 표시 갯수 -->
 		<recentTrackbacks>4</recentTrackbacks> <!-- 사이드바의 최근 트랙백 표시 갯수 -->
 		<itemsOnGuestbook>10</itemsOnGuestbook> <!-- 한페이지에 표시될 방명록 갯수 *** -->
 		<tagsInCloud>30</tagsInCloud> <!-- 사이드바에 표시될 태그 갯수 -->
