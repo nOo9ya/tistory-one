@@ -1,5 +1,9 @@
 ;(function($) {
 
+    /**
+     * Area variable
+     * #1 Tistory Theme
+     */
     var Area = {};
 
     Area.SocialShare = (function() {
@@ -46,10 +50,14 @@
 
     })();
 
+    Area.init = function() {
+        Area.SocialShare.init();
+    };
+
     $.Area = Area;
 
     var $allVideos = $("iframe[src^='//player.vimeo.com'], iframe[src^='//www.youtube.com'], object, embed, iframe[src^='http://www.youtube.com'], iframe[src^='https://www.youtube.com'], iframe[src^='http://videofarm.daum.net'], iframe[src^='https://videofarm.daum.net'], iframe[src^='//videofarm.daum.net'], iframe[src^='//tv.kakao.com'], iframe[src^='//kakaotv.daum.net']"),
-        $fluidEl = $(".area_view");
+        $fluidEl = $(".article");
 
     $allVideos.each(function() {
 

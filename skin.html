@@ -431,6 +431,10 @@
 
             <div id="sidebar">
                 <s_sidebar>
+                    <!-- Blog Options -->
+                </s_sidebar>
+
+                <s_sidebar>
                     <s_sidebar_element>
                         <!-- 카테고리 -->
                         <div class="category">
@@ -490,7 +494,10 @@
                             <ul>
                                 <s_archive_rep>
                                     <li>
-                                        <a href="[##_archive_rep_link_##]">[##_archive_rep_date_##] <span class="cnt">([##_archive_rep_count_##])</span></a>
+                                        <a href="[##_archive_rep_link_##]">
+                                            [##_archive_rep_date_##]
+                                            <span class="cnt">([##_archive_rep_count_##])</span>
+                                        </a>
                                     </li>
                                 </s_archive_rep>
                             </ul>
@@ -523,7 +530,7 @@
                             <h1>LINKS</h1>
                             <ul>
                                 <s_link_rep>
-                                    <li><a href="[##_link_url_##]" onclick="window.open(this.href); return false">[##_link_site_##]</a></li>
+                                    <li><a href="[##_link_url_##]" target="_blank">[##_link_site_##]</a></li>
                                 </s_link_rep>
                             </ul>
                         </div>
@@ -542,17 +549,6 @@
                         </div>
                     </s_sidebar_element>
 
-                </s_sidebar>
-
-                <s_sidebar>
-                    <s_sidebar_element>
-                        <!-- 티스토리 스킨 작업 중 안내 -->
-                        <div class="category">
-                            <h3>스킨 작업중입니다!!</h3>
-
-                            <p>화면이 깨져보여도 이해해주세요~</p>
-                        </div>
-                    </s_sidebar_element>
                 </s_sidebar>
             </div>
             <!-- sidebar close -->
@@ -575,3 +571,4 @@
 <script src="./images/script.js"></script>
 </body>
 </html>
+

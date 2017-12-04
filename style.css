@@ -67,17 +67,8 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 
 .sr-only {position: absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); border:0;}
 
-/* layout */
-#container {background:#f3f5f7; min-width:1200px}
-#header {padding:10px; border-bottom:1px solid #ddd; background:#fff;}
-#contentWrap {width:1200px; margin:10px auto;}
-#contentWrap:after {display:block; clear:both; content:'';}
-#content {width:910px; float:left;}
-#sidebar {width:280px; float:right;}
-#footer {padding:30px 0; border-top:1px solid #ddd; background:#fff;}
-
 /* header */
-.global-wrap {width:1200px; margin:0 auto;}
+.global-wrap {margin:0 auto;}
 .global-wrap:after {display:block; clear:both; content:'';}
 .blog-title {float:left;}
 .header-nav {float:right; margin-top:10px}
@@ -162,6 +153,7 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 .calendar .tt-calendar .cal_week2, .calendar .tt-calendar .cal_day_sunday {color:red}
 .calendar .tt-calendar td a {display:inline-block; padding:2px 8px; background:#ff8149; color:#fff; border-radius:30px;}
 .calendar .tt-calendar .cal_day4 {background:#333; color:#fff}
+.calendar .tt-calendar .cal_day4 a {background:#333}
 
 /* tags-box */
 .tags-box {}
@@ -208,7 +200,7 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 .article-list::after { content:''; clear:both; display:block }
 .article-list .article-item {text-decoration:none}
 .article-list .article-item:hover .title {color:#ff8149}
-.article-list .article-item .thumb {float:left; width:150px; height:150px; margin:6px 30px 5px 0}
+.article-list .article-item .thumb {display:block; width:150px; margin:6px auto 5px}
 .article-list .article-item .title {font-weight:normal;font-size:1.375em}
 .article-list .article-item .summary {margin-top:4px; color:#7e7e7e; vertical-align:top; font:normal 0.875em 'NanumBarunGothic','Noto Sans', sans-serif; line-height:1.5em;}
 .article-list .info {margin-top:6px; font-size:0.875em}
@@ -240,11 +232,15 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 .article h2 {font-size:1.5em; line-height:2em}
 .article h3 {margin:30px 0 10px; padding:15px 0 0 10px; border-left:5px solid #1d1d1d; color:#000; font-weight:bold; font-size:1.5em;}
 .article h4 {color:#1d1d1d; font-size:1.125em}
+.article table {width:100%}
+.article table th, .article table td {padding:2px 8px}
 .article ul {padding-left:20px; list-style:disc}
+.article ol {padding-left:20px}
 .article ul li ul {padding:0 0 20px 20px; list-style:none; font-size:0.875em}
 .article ul li ol {padding:0 0 20px 20px; list-style:decimal; font-size:0.875em}
 .article blockquote {padding:20px; font-size:0.875em; line-height:1.5em; color:#333; background:#efefef; border:1px solid #ddd}
 .article a {color:#ff8149}
+.article p {margin-bottom:10px}
 
 /* Article Footer */
 .article-footer {font-size:0.875em}
@@ -296,9 +292,9 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 .reply-list {margin-bottom:30px; list-style:none; border-bottom:1px solid #e9e9e9}
 .reply-list li {padding:20px 0; border-top:1px solid #e9e9e9}
 .reply-list li:after {display:block; clear:both; content:''}
-.reply-list li .thumb {float:left; width:10%; text-align:center}
+.reply-list li .thumb {float:left; width:0; text-align:center; display:none}
 .reply-list li .thumb img {border-radius: 50%;}
-.reply-list li .reply-content {float:right; width:90%}
+.reply-list li .reply-content {float:right; width:100%}
 .reply-list li .reply-content:after {display:block; clear:both; content:''}
 .reply-list li .reply-content ul {}
 .reply-list li .reply-content ul li {border:0; padding:0}
@@ -402,9 +398,9 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 .guestbook-list {margin-bottom:30px; list-style:none; border-bottom:1px solid #e9e9e9}
 .guestbook-list li {padding:20px 0; border-top:1px solid #e9e9e9}
 .guestbook-list li:after {display:block; clear:both; content:''}
-.guestbook-list li .thumb {float:left; width:10%; text-align:center}
+.guestbook-list li .thumb {float:left; width:0; text-align:center; display:none}
 .guestbook-list li .thumb img {border-radius: 50%;}
-.guestbook-list li .guestbook-content {float:right; width:90%}
+.guestbook-list li .guestbook-content {float:right; width:100%}
 .guestbook-list li .guestbook-content:after {display:block; clear:both; content:''}
 .guestbook-list li .guestbook-content ul {}
 .guestbook-list li .guestbook-content ul li {border:0; padding:0}
@@ -448,10 +444,51 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 /* *********************************************************************
    Pagination
    ****************************************************************** */
-.pagination {margin:10px 0 0; text-align:center}
+.pagination {margin:10px 0; text-align:center}
 .pagination .btn-prev, .pagination .btn-next, .pagination a span {display: inline-block; margin-right:2px; padding: 4px 12px; border:1px solid #ddd; border-radius: 4px; color: #111; background:#fff; text-decoration: none; text-align: center;}
 .pagination .btn-prev:hover, .pagination .btn-next:hover, .pagination a span:hover,
 .pagination .btn-prev:active, .pagination .btn-next:active, .pagination a span:active,
 .pagination .btn-prev:focus, .pagination .btn-next:focus, .pagination a span:focus {color:#fff; background:#ff8149; border:1px solid #ff8149}
 .pagination a .selected {color:#ff8149; border:1px solid #ff8149}
 .pagination .no-more-prev, .pagination .no-more-next {display:none}
+
+
+/* layout */
+#container {background:#f3f5f7}
+#header {padding:10px; border-bottom:1px solid #ddd; background:#fff;}
+#contentWrap {margin:10px auto;}
+#contentWrap:after {display:block; clear:both; content:'';}
+#content {}
+#sidebar {}
+#footer {padding:30px 0; border-top:1px solid #ddd; background:#fff;}
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 576px) {
+    /* Blog List */
+    .article-list .article-item .thumb {float:left; width:150px; height:150px; margin:6px 30px 5px 0}
+    /* Reply List */
+    .reply-list li .thumb {width:10%; display:block}
+    .reply-list li .reply-content {width:90%}
+    /* Guestbook list */
+    .guestbook-list li .thumb {width:10%; display:block}
+    .guestbook-list li .guestbook-content {width:90%}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media screen and (min-width:1200px) {
+    /* layout */
+    #container {min-width:1200px}
+    #contentWrap {width:1200px;}
+    #content {width:910px; float:left;}
+    #sidebar {width:280px; float:right;}
+    #footer {padding:30px 0; border-top:1px solid #ddd; background:#fff;}
+    .global-wrap {width:1200px;}
+}
