@@ -18,7 +18,7 @@
 - Section 3-2 : <a href="http://tistory.noo9ya.com/24?category=764101" target="_blank">티스토리 반응형 스킨 만들기 - fontawesome 티스토리 적용</a>
 - Section 3-3 : <a href="http://tistory.noo9ya.com/25?category=764101" target="_blank">티스토리 반응형 스킨 만들기 - index.xml 작성</a>
 - Section 4 : <a href="http://tistory.noo9ya.com/26?category=764101" target="_blank">티스토리 반응형 스킨 만들기 - 레이아웃</a>
-- Section 5 : <a href="http://tistory.noo9ya.com/27?category=764101" target="_blank">티스토리 반응형 스킨 만들기 - header]
+- Section 5 : <a href="http://tistory.noo9ya.com/27?category=764101" target="_blank">티스토리 반응형 스킨 만들기 - header]</a>
 - Section 6 : <a href="http://tistory.noo9ya.com/28?category=764101" target="_blank">티스토리 반응형 스킨 만들기 - sidebar 넌 누구냐?</a>
 - Section 7 : <a href="http://tistory.noo9ya.com/29?category=764101" target="_blank">티스토리 반응형 스킨 만들기 - sidebar element 넌 또 뭐야?</a>
 - Section 8 : <a href="http://tistory.noo9ya.com/30?category=764101" target="_blank">티스토리 반응형 스킨 만들기 - sidebar에 카테고리 넣기</a>
