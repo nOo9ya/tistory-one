@@ -1,13 +1,40 @@
 ;(function($) {
+    /**
+     * nOo9ya skin config
+     */
+    var role = window.T.config.ROLE;
+    $.config = {
+        logo : function(logo, title, img) {
+            logo = logo !== undefined ? logo : false;
+            title = title !== undefined ? title : ".blog-logo .title";
+            img = img !== undefined ? img : ".blog-logo .img-profile";
+
+            if (logo === true) {
+                $(img).show();
+                $(title).hide();
+            } else {
+                $(img).hide();
+                $(title).show();
+            }
+        },
+
+        adminLink : function(target, check) {
+            target = target !== undefined ? target : "#footerAdmin";
+            check = check !== undefined ? check : true;
+
+            if (check === true) {
+                role == "owner" ? $(target).show() : $(target).hide();
+            }
+        }
+    };
 
     /**
-     * Area variable
-     * #1 Tistory Theme
+     * skin variable
+     * #1 Tistory Theme 참조
      */
     var Area = {};
 
     Area.SocialShare = (function() {
-
         var SOCIAL_SHARE = {
             kakaostory: {
                 url: "https://story.kakao.com/share",
@@ -46,8 +73,15 @@
             }
         };
 
+        var init = function() {
+
+        };
+
         $(".article-share").on("click", "a", onClick);
 
+        return {
+            init: init
+        }
     })();
 
     Area.init = function() {
@@ -60,25 +94,21 @@
         $fluidEl = $(".article");
 
     $allVideos.each(function() {
-
         $(this)
             // jQuery .data does not work on object/embed elements
             .attr('data-aspectRatio', this.height / this.width)
             .removeAttr('height')
             .removeAttr('width');
-
     });
 
     $(window).resize(function() {
 
         var newWidth = $fluidEl.width();
         $allVideos.each(function() {
-
             var $el = $(this);
             $el
                 .width(newWidth)
                 .height(newWidth * $el.attr('data-aspectRatio'));
-
         });
 
     }).resize();
