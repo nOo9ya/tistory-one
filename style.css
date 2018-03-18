@@ -70,8 +70,8 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 /* header */
 .global-wrap {margin:0 auto;}
 .global-wrap:after {display:block; clear:both; content:'';}
-.blog-title {float:left;}
-.header-nav {float:right; margin-top:10px}
+.blog-title {display:block; text-align:center}
+.header-nav {text-align:right; margin-top:10px}
 .header-nav li {display:inline-block; margin-left:15px;}
 .header-nav li button {vertical-align:top}
 .header-nav li div {position:relative}
@@ -463,7 +463,7 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 #footer {padding:30px 0; border-top:1px solid #ddd; background:#fff;}
 
 /* Small devices (landscape phones, 576px and up) */
-@media screen and (min-width: 576px) {
+@media (min-width: 576px) {
     /* Blog List */
     .article-list .article-item .thumb {float:left; width:150px; height:150px; margin:6px 30px 5px 0}
     /* Reply List */
@@ -475,7 +475,9 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
+    .blog-title {float:left;}
+    .header-nav {float:right; margin-top:20px}
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -491,4 +493,15 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
     #sidebar {width:280px; float:right;}
     #footer {padding:30px 0; border-top:1px solid #ddd; background:#fff;}
     .global-wrap {width:1200px;}
+}
+
+/* *********************************************************************
+   adsense
+   ****************************************************************** */
+.article-adsense { float: right; margin: 0 0 20px 20px; width: 336px; height: 280px; }
+@media screen and ( max-width: 1024px) {
+    .article-adsense { width: 300px; height: 250px; margin-right:30px }
+}
+@media screen and ( max-width: 767px) {
+    .article-adsense { float: none; margin: 0 auto 20px; width: 90%; height: auto; text-align:center }
 }
