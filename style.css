@@ -227,17 +227,20 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 .article-header .info-wrap ul li a {color:#bbb}
 
 /* Article */
-.article {padding:20px; background:#fff; border:1px solid #ddd; font-weight:normal; font-size:1em; line-height:1.75em}
+.article {padding:20px; background:#fff; border:1px solid #ddd; font-weight:normal; font-size:1em; line-height:1.75em; letter-spacing: -1px;}
 .article h1 {font-size:2em; line-height:2.5em}
-.article h2 {font-size:1.5em; line-height:2em}
-.article h3 {margin:30px 0 10px; padding:15px 0 0 10px; border-left:5px solid #1d1d1d; color:#000; font-weight:bold; font-size:1.5em;}
-.article h4 {color:#1d1d1d; font-size:1.125em}
+.article h2 {margin:30px 0 10px; padding:15px 0 0 10px; border-left:5px solid #1d1d1d; color:#000; font-weight:bold; font-size:1.625rem; line-height:2.25rem;}
+.article h3 {margin:20px 0; font-size:1.45rem;}
+.article h4 {margin:20px 0; color:#1d1d1d; font-size:1.25rem; line-height:1.938rem}
 .article table {width:100%}
 .article table th, .article table td {padding:2px 8px}
-.article ul {padding-left:20px; list-style:disc}
-.article ol {padding-left:20px}
-.article ul li ul {padding:0 0 20px 20px; list-style:none; font-size:0.875em}
-.article ul li ol {padding:0 0 20px 20px; list-style:decimal; font-size:0.875em}
+.article ul, .article ol, article dl {margin:14px 0 24px}
+.article ul {padding-left:10px; list-style:disc}
+.article ol {padding-left:10px}
+.article ul li ul {padding:0 0 20px 10px; list-style:none; font-size:0.875em}
+.article ul li ol {padding:0 0 20px 10px; list-style:decimal; font-size:0.875em}
+.article li {margin-bottom: 3px; line-height: 1.7rem; list-style-position:inside;}
+.article li:marker {margin-right:0.875rem}
 .article blockquote {padding:20px; font-size:0.875em; line-height:1.5em; color:#333; background:#efefef; border:1px solid #ddd}
 .article a {color:#ff8149}
 .article p {margin-bottom:10px}
