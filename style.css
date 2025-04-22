@@ -234,12 +234,12 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 .article h4 {margin:20px 0; color:#1d1d1d; font-size:1.25rem; line-height:1.938rem}
 .article table {width:100%}
 .article table th, .article table td {padding:2px 8px}
-.article ul, .article ol, article dl {margin:14px 0 24px}
+.article ul, .article ol, article dl {margin:14px 0 24px 19px}
 .article ul {padding-left:10px; list-style:disc}
 .article ol {padding-left:10px}
 .article ul li ul {padding:0 0 20px 10px; list-style:none; font-size:0.875em}
 .article ul li ol {padding:0 0 20px 10px; list-style:decimal; font-size:0.875em}
-.article li {margin-bottom: 3px; line-height: 1.7rem; list-style-position:inside;}
+.article li {margin-bottom: 3px; line-height: 1.7rem;}
 .article li:marker {margin-right:0.875rem}
 .article blockquote {padding:20px; font-size:0.875em; line-height:1.5em; color:#333; background:#efefef; border:1px solid #ddd}
 .article a {color:#ff8149}
