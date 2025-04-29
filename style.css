@@ -87,7 +87,7 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 /* *********************************************************************
    sidebar
    ****************************************************************** */
-#sidebar div {position:relative; margin-bottom:10px; padding:10px; background:#fff; border:1px solid #ddd}
+#sidebar div {position:relative; width:100%; margin-bottom:10px; padding:10px; background:#fff; border:1px solid #ddd}
 #sidebar div h1 {font-size:1.125em; color:#000; font-weight:normal; font-family:'Roboto', tahoma, 'NanumBarunGothic', 'Noto Sans', sans-serif;}
 
 /* category */
@@ -490,12 +490,12 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 /* Extra large devices (large desktops, 1200px and up) */
 @media screen and (min-width:1200px) {
     /* layout */
-    #container {min-width:1200px}
-    #contentWrap {width:1200px;}
+    #container {min-width:1222px}
+    #contentWrap {width:1222px;}
     #content {width:910px; float:left;}
-    #sidebar {width:280px; float:right;}
+    #sidebar {width:302px; float:right;}
     #footer {padding:30px 0; border-top:1px solid #ddd; background:#fff;}
-    .global-wrap {width:1200px;}
+    .global-wrap {width:1222px;}
 }
 
 /* *********************************************************************
