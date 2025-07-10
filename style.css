@@ -87,7 +87,7 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
    sidebar
    ****************************************************************** */
 #sidebar div {position:relative; width:100%; margin-bottom:10px; padding:10px; background:#fff; border:1px solid #ddd}
-#sidebar div h1 {font-size:1.125em; color:#000; font-weight:normal; font-family:'Roboto', tahoma, 'NanumBarunGothic', 'Noto Sans', sans-serif;}
+#sidebar div h1, #sidebar div h2 {font-size:1.125em; color:#000; font-weight:normal; font-family:'Roboto', tahoma, 'NanumBarunGothic', 'Noto Sans', sans-serif;}
 
 /* category */
 .category {}
