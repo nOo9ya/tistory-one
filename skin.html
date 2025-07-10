@@ -429,16 +429,16 @@
             </div>
             <!-- content close -->
 
-            <div id="sidebar">
-                <s_sidebar>
-                    <!-- Blog Options -->
+            <div id="sidebar" style="height: 100vh">
+				<s_sidebar>
+					<!-- Blog Options -->
                 </s_sidebar>
-
+							
                 <s_sidebar>
                     <s_sidebar_element>
                         <!-- 카테고리 -->
                         <div class="category">
-                            <h1>CATEGORIES</h1>
+                            <h2>CATEGORIES</h2>
                             [##_category_list_##]
                         </div>
                     </s_sidebar_element>
@@ -447,7 +447,7 @@
                         <!-- 공지사항 -->
                         <s_rct_notice>
                             <div class="notice">
-                                <h1>NOTICE</h1>
+                                <h2>NOTICE</h2>
                                 <ul>
                                     <s_rct_notice_rep>
                                         <li><a href="[##_notice_rep_link_##]">[##_notice_rep_title_##]</a></li>
@@ -457,11 +457,11 @@
                             </div>
                         </s_rct_notice>
                     </s_sidebar_element>
-
-                    <s_sidebar_element>
+									
+					<s_sidebar_element>
                         <!-- 최근에 올라온 글 -->
                         <div class="recent-post">
-                            <h1>RECENT POST</h1>
+                            <h2>RECENT POST</h2>
                             <ul>
                                 <s_rctps_rep>
                                     <li>
@@ -471,11 +471,11 @@
                             </ul>
                         </div>
                     </s_sidebar_element>
-
+									
                     <s_sidebar_element>
                         <!-- 최근에 달린 댓글 -->
                         <div class="recent-comment">
-                            <h1>RECENT COMMENT</h1>
+                            <h2>RECENT COMMENT</h2>
                             <ul>
                                 <s_rctrp_rep>
                                     <li>
@@ -490,32 +490,29 @@
                     <s_sidebar_element>
                         <!-- 글 보관함 -->
                         <div class="archive">
-                            <h1>ARCHIVE</h1>
+                            <h2>ARCHIVE</h2>
                             <ul>
                                 <s_archive_rep>
                                     <li>
-                                        <a href="[##_archive_rep_link_##]">
-                                            [##_archive_rep_date_##]
-                                            <span class="cnt">([##_archive_rep_count_##])</span>
-                                        </a>
+                                        <a href="[##_archive_rep_link_##]">[##_archive_rep_date_##] <span class="cnt">([##_archive_rep_count_##])</span></a>
                                     </li>
                                 </s_archive_rep>
                             </ul>
                         </div>
                     </s_sidebar_element>
-
+									
                     <s_sidebar_element>
                         <!-- 달력 -->
                         <div class="calendar">
-                            <h1 class="sr-only">CALENDAR</h1>
+                            <h2 class="sr-only">CALENDAR</h2>
                             [##_calendar_##]
                         </div>
                     </s_sidebar_element>
-
-                    <s_sidebar_element>
+									
+										<s_sidebar_element>
                         <!-- 태그 클라우드 -->
                         <div class="tags-box">
-                            <h1>TAGS</h1>
+                            <h2>TAGS</h2>
                             <ul>
                                 <s_random_tags>
                                     <li><a href="[##_tag_link_##]" class="[##_tag_class_##]">[##_tag_name_##]</a></li>
@@ -523,11 +520,11 @@
                             </ul>
                         </div>
                     </s_sidebar_element>
-
+									
                     <s_sidebar_element>
                         <!-- 링크 -->
                         <div class="links">
-                            <h1>LINKS</h1>
+                            <h2>LINKS</h2>
                             <ul>
                                 <s_link_rep>
                                     <li><a href="[##_link_url_##]" target="_blank">[##_link_site_##]</a></li>
@@ -535,11 +532,11 @@
                             </ul>
                         </div>
                     </s_sidebar_element>
-
+									
                     <s_sidebar_element>
                         <!-- 방문자수 -->
                         <div class="counter">
-                            <h1 class="sr-only">COUNTER</h1>
+                            <h2 class="sr-only">COUNTER</h2>
                             <p class="total">Total : [##_count_total_##]</p>
                             <p class="today-yesterday">
                                 Yesterday : [##_count_yesterday_##]
@@ -547,9 +544,20 @@
                                 Today : <strong>[##_count_today_##]</strong>
                             </p>
                         </div>
-                    </s_sidebar_element>
-
+                    </s_sidebar_element>								
                 </s_sidebar>
+
+                <div class="sticky-sidebar">
+                    <ins class="adsbygoogle"
+                        style="display:block"
+                        data-ad-client="ca-pub-4925323246980163"
+                        data-ad-slot="3816577247"
+                        data-ad-format="auto"
+                        data-full-width-responsive="true"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
             </div>
             <!-- sidebar close -->
 
