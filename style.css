@@ -228,7 +228,7 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 /* Article */
 .article {padding:20px; background:#fff; border:1px solid #ddd; font-weight:normal; font-size:1em; line-height:1.75em; letter-spacing: -1px;}
 .article h1 {font-size:2em; line-height:2.5em}
-.article h2 {margin:30px 0 10px; padding:15px 0 0 10px; border-left:5px solid #1d1d1d; color:#000; font-weight:bold; font-size:1.625rem; line-height:2.25rem;}
+.article h2 {margin:30px 0 10px; padding:15px 0 0; color:#000; font-weight:bold; font-size:1.625rem; line-height:2.25rem;}
 .article h3 {margin:20px 0; font-size:1.45rem;}
 .article h4 {margin:20px 0; color:#1d1d1d; font-size:1.25rem; line-height:1.938rem}
 .article table {width:100%}
