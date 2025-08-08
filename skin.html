@@ -43,9 +43,13 @@
                                 </div>
                             </s_search>
                         </li>
-                        <li class="taglog" ><a href="[##_taglog_link_##]" title="태그"><i class="fa fa-tags fa-lg"></i></a></li>
-                        <li class="guestbook" ><a href="[##_guestbook_link_##]" title="방명록"><i class="fa fa-book fa-lg"></i></a></li>
-                        <li class="rss"><a href="[##_rss_url_##]" onclick="window.open(this.href); return false" title="rss"><i class="fa fa-rss fa-lg"></i></a></li>
+                        <li class="taglog" id="ownerCheck" style="display:none">관리자</li>
+                        <!-- <li class="taglog" ><a href="[##_taglog_link_##]" title="태그"><i class="fa fa-tags fa-lg"></i></a></li> -->
+                        <li class="taglog" ><a href="/tags" title="태그"><i class="fa fa-tags fa-lg"></i></a></li>
+                        <!-- <li class="guestbook" ><a href="[##_guestbook_link_##]" title="방명록"><i class="fa fa-book fa-lg"></i></a></li> -->
+                        <li class="guestbook" ><a href="/guestbook" title="방명록"><i class="fa fa-book fa-lg"></i></a></li>
+                        <!-- <li class="rss"><a href="[##_rss_url_##]" onclick="window.open(this.href); return false" title="rss"><i class="fa fa-rss fa-lg"></i></a></li> -->
+                        <li class="rss"><a href="/rss" onclick="window.open(this.href); return false" title="rss"><i class="fa fa-rss fa-lg"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -109,6 +113,21 @@
 
                         <!-- 본문 -->
                         <div class="article">
+                            <div class="article-adsenses">
+                                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-"
+                                    crossorigin="anonymous"></script>
+                                <!-- noo9ya 티스토리-본문-반응형 -->
+                                <ins class="adsbygoogle"
+                                    style="display:block"
+                                    data-ad-client="ca-pub-"
+                                    data-ad-slot="3816577247"
+                                    data-ad-format="auto"
+                                    data-full-width-responsive="true"></ins>
+                                <script>
+                                    (adsbygoogle = window.adsbygoogle || []).push({});
+                                </script>
+                            </div>
+
                             [##_article_rep_desc_##]
 
                             <!-- 본문 하단 -->
@@ -120,7 +139,7 @@
                                     </dl>
                                 </s_tag_label>
 
-                                <h1 class="sr-only">공유하기 링크</h1>
+                                <h2 class="sr-only">공유하기 링크</h2>
                                 <ul class="article-share">
                                     <li><a href="#none" class="facebook" data-service="facebook"><i class="fa fa-facebook-square"></i> 페이스북</a></li>
                                     <li><a href="#none" class="twitter" data-service="twitter"><i class="fa fa-twitter-square"></i> 트위터</a></li>
@@ -134,9 +153,9 @@
                         <s_article_related>
                             <!-- 본문 관련 글 목록 -->
                             <div class="article-related">
-                                <h1 class="related-title">
+                                <h2 class="related-title">
                                     <a href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a> Related Articles
-                                </h1>
+                                </h2>
                                 <ul class="related-list">
                                     <s_article_related_rep>
                                         <li class="[##_article_related_rep_type_##]">
@@ -147,7 +166,7 @@
                                                 </span>
                                                 </s_article_related_rep_thumbnail>
                                                 <span class="related-list-date">[##_article_related_rep_date_##]</span>
-                                                <strong class="related-list-title">[##_article_related_rep_title_##]</strong>
+                                                <strong class="related-list-title">[##_article_related_rep_title_##]</strong>																
                                             </a>
                                         </li>
                                     </s_article_related_rep>
@@ -363,7 +382,7 @@
                                                 <li class="nickname"><span></span>[##_guest_rep_name_##]</li>
                                                 <li class="date">[##_guest_rep_date_##]</li>
                                             </ul>
-                                            <p class="text">[##_guest_rep_desc_##]</p>
+																					  <div class="bbcode"><p class="text">[##_guest_rep_desc_##]</p></div>
                                             <ul class="control">
                                                 <li class=""><a href="#none" onclick="[##_guest_rep_onclick_delete_##]" class="reply-modify"><i class="fa fa-cog"></i> 수정/삭제</a></li>
                                                 <li class=""><a href="#none" onclick="[##_guest_rep_onclick_reply_##]" class="reply-reply"><i class="fa fa-mail-reply"></i> 댓글쓰기</a></li>
@@ -568,9 +587,9 @@
             <div class="footer-nav">
                 <a href="[##_taglog_link_##]">태그</a>
                 <a href="[##_guestbook_link_##]">방명록</a>
-                <a href="[##_owner_url_##]" class="admin" target="_blank" id="footerAdmin">관리자</a>
+                <a href="[##_owner_url_##]" class="admin" target="_blank" id="footerAdminDisabled">관리자</a>
             </div>
-            <p class="copyright">Blog is powered by kakao / Designed by <a href="http://tistory.noo9ya.com" target="_blank">nOo9ya</a></p>
+            <p class="copyright">Blog is powered by kakao / Designed by <a href="https://tistory.noo9ya.com" target="_blank">nOo9ya</a></p>
         </div> <!-- footer close -->
 
     </div> <!-- container close -->
